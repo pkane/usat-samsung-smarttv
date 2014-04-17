@@ -1,0 +1,112 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+/* Layout */
+body
+{
+	width: 1280px;
+	height: 720px;
+}
+
+/* Fonts */
+.futuratodaynormal {
+    font-family: FuturaToday;
+    margin: 45px 0 6px;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.futuratodaybold {
+    font-family: FuturaTodayBold;
+    margin: 45px 0 6px;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.futuratodaylight {
+    font-family: FuturaTodayLight;
+    margin: 45px 0 6px;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+.pragroman {
+    font-family: PragRoman;
+    margin: 45px 0 6px;
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+/* Logos */
+video {
+	width: 1280px;
+	height: 720px;
+}
+.logo-size {
+	width: 788px;
+	height: 163px;
+}
+.logo-header {
+	width: 515px;
+	height: 186px;
+    background-image: url(../../app/assets/logos/logo-header.png);
+}
+.logo-overlay {
+	position: absolute;
+	bottom: 70px;
+	left: 80px;
+	width: 300px;
+	height: 91px;
+    background-image: url(../../app/assets/logos/logo-overlay.png);
+}
+.logo-main {
+    background-image: url(../../app/assets/logos/logo-main.png);
+}
+.logo-news {
+    background-image: url(../../app/assets/logos/logo-news.png);
+}
+.logo-sports {
+    background-image: url(../../app/assets/logos/logo-sports.png);
+}
+.logo-life {
+    background-image: url(../../app/assets/logos/logo-life.png);
+}
+.logo-money {
+    background-image: url(../../app/assets/logos/logo-money.png);
+}
+.logo-tech {
+    background-image: url(../../app/assets/logos/logo-tech.png);
+}
+.logo-travel {
+    background-image: url(../../app/assets/logos/logo-travel.png);
+}
+
+/* Colors */
+.default {
+    color: #fff;
+}
+.home, .news {
+    color: #009afc;
+}
+.sports {
+    color: #ec1b24;
+}
+.money {
+    color: #00ab4d;
+}
+.life {
+    color: #91268e;
+}
+.tech {
+    color: #f89d33;
+}
+.travel {
+    color: #33c3df;
+}
+.weather {
+    color: #fc0;
+}
+.opinion {
+    color: #666;
+}

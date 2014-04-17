@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>USATODAY</title>
+
+		<!-- TODO : Common API -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+
+		<!-- TODO : Javascript code -->
+		<script language="javascript" type="text/javascript" src="app/javascript/Main.js"></script>
+
+		<!-- TODO : Style sheets code -->
+		<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">
+
+		<!-- TODO: Plugins -->
+
+	</head>
+
+	<body onload="Main.onLoad();" onunload="Main.onUnload();">
+
+		<!-- Dummy anchor as focus for key events -->
+		<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
+
+		<!-- TODO: your code here -->
+		<div class="futuratodaybold home">HOME</div>
+		<div class="futuratodaybold sports">SPORTS</div>
+		<div class="futuratodaybold money">MONEY</div>
+		<div class="futuratodaybold life">LIFE</div>
+		<div class="futuratodaybold tech">TECH</div>
+		<div class="futuratodaybold travel">TRAVEL</div>
+		<div id="logo-overlay" class="logo-overlay"></div>
+		<div class="logo-size logo-main"></div>
+		<div class="logo-size logo-sports"></div>
+		<div class="logo-size logo-money"></div>
+		<div class="logo-size logo-life"></div>
+		<div class="logo-size logo-tech"></div>
+		<div class="logo-size logo-travel"></div>
+		<div>
+			<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4"></video>
+		</div>
+	</body>
+</html>
