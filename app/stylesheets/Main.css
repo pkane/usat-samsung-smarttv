@@ -10,6 +10,31 @@ body
 {
 	width: 1280px;
 	height: 720px;
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.nav {
+bottom: 0;
+width: 300px;
+height: 390px;
+background: #12110E;
+left: 5%;    
+}
+
+.section-list {
+    font-size: 20px;
+font-family: futura;
+list-style: none;
+padding: 0;
+color: #FFF;
+}
+
+.section-list > li {
+    padding: 10px 0 10px 30px;    
 }
 
 /* Fonts */
@@ -20,10 +45,7 @@ body
     font-size: 48px;
 }
 .futuratodaybold {
-    font-family: FuturaTodayBold;
-    margin: 45px 0 6px;
     text-transform: uppercase;
-    font-size: 48px;
 }
 .futuratodaylight {
     font-family: FuturaTodayLight;
@@ -58,7 +80,6 @@ video {
 	left: 80px;
 	width: 300px;
 	height: 91px;
-    background-image: url(../../app/assets/logos/logo-overlay.png);
 }
 .logo-main {
     background-image: url(../../app/assets/logos/logo-main.png);
@@ -84,29 +105,29 @@ video {
 
 /* Colors */
 .default {
-    color: #fff;
+    background-color: #fff;
 }
-.home, .news {
-    color: #009afc;
+.home.active, .news.active {
+    background-color: #009afc;
 }
-.sports {
-    color: #ec1b24;
+.sports.active {
+    background-color: #ec1b24;
 }
-.money {
-    color: #00ab4d;
+.money.active {
+    background-color: #00ab4d;
 }
-.life {
-    color: #91268e;
+.life.active {
+    background-color: #91268e;
 }
-.tech {
-    color: #f89d33;
+.tech.active {
+    background-color: #f89d33;
 }
-.travel {
-    color: #33c3df;
+.travel.active {
+    background-color: #33c3df;
 }
-.weather {
-    color: #fc0;
+.weather.active {
+    background-color: #fc0;
 }
-.opinion {
-    color: #666;
+.opinion.active {
+    background-color: #666;
 }
