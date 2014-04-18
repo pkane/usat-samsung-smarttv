@@ -4,11 +4,11 @@
   <cpname itemtype="string"/>  
   <cplogo itemtype="string"/>  
   <cpauthjs itemtype="string"/>  
-  <ThumbIcon itemtype="string"/>  
-  <BigThumbIcon itemtype="string"/>  
+  <ThumbIcon itemtype="string">assets/images/logos/logo-header.png</ThumbIcon>  
+  <BigThumbIcon itemtype="string">assets/images/logos/logo-header.png</BigThumbIcon>
   <ListIcon itemtype="string"/>  
   <BigListIcon itemtype="string"/>  
-  <category itemtype="string"/>  
+  <category itemtype="string">News</category>  
   <autoUpdate itemtype="boolean">n</autoUpdate>  
   <ver itemtype="string">0.100</ver>  
   <mgrver itemtype="string"/>  

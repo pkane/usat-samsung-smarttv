@@ -1,5 +1,5 @@
-// var widgetAPI = new Common.API.Widget();
-// var tvKey = new Common.API.TVKeyValue();
+var widgetAPI = new Common.API.Widget();
+var tvKey = new Common.API.TVKeyValue();
 
 var Main =
 {
@@ -10,10 +10,7 @@ Main.onLoad = function()
 {
 	// Enable key event processing
 	this.enableKeys();
-	// widgetAPI.sendReadyEvent();
-	Scene1.load();
-	Scene1.show();
-	Scene1.focus();
+	widgetAPI.sendReadyEvent();
 };
 
 Main.onUnload = function()

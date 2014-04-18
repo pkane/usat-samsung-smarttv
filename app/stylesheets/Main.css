@@ -28,6 +28,10 @@ font-family: FuturaTodayLight;
 src: url(../assets/fonts/FuturaTodayLight.otf);
 }
 
+.scene {
+    display: none;
+}
+
 .absolute {
     position: absolute;
 }
@@ -52,6 +56,10 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 .section-list > li {
     padding: 10px 0 10px 30px;    
     position: relative;
+}
+
+.section-list > li a {
+    display: block;
 }
 
 .section-list > li.selected:after {
