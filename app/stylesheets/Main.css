@@ -13,51 +13,111 @@ body
     position: relative;
 }
 
+@font-face{
+font-family: FuturaToday;
+src: url(../assets/fonts/FuturaTodayNormal.otf);
+}
+
+@font-face{
+font-family: FuturaTodayBold;
+src: url(../assets/fonts/FuturaTodayBold.otf);
+}
+
+@font-face{
+font-family: FuturaTodayLight;
+src: url(../assets/fonts/FuturaTodayLight.otf);
+}
+
 .absolute {
     position: absolute;
 }
 
 .nav {
-bottom: 0;
-width: 300px;
-height: 390px;
-background: #12110E;
-left: 5%;    
+    bottom: 0;
+    width: 300px;
+    height: 390px;
+    background: #12110E;
+    left: 5%;    
+    z-index: 1;
 }
 
 .section-list {
     font-size: 20px;
-font-family: futura;
-list-style: none;
-padding: 0;
-color: #FFF;
+    font-family: futura;
+    list-style: none;
+    padding: 0;
+    color: #FFF;
 }
 
 .section-list > li {
     padding: 10px 0 10px 30px;    
+    position: relative;
+}
+
+.section-list > li.selected:after {
+    background: url('../assets/images/icon-sprite.png') no-repeat;
+    display: block;
+    content: '';
+    width: 18px;
+    height: 28px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.section-heading {
+    font-size: 22px;
+    color: #ccc;
+    padding: 10px 0 10px 20px;    
+}
+
+.index-wrapper {
+    overflow-x: auto;    
+    bottom: 40%;    
+    height: 180px;    
+    width: 100%;
+}
+
+.section-index { 
+    height: 180px;
+    width: 9999px;
+    background: #F3F3F3;
+}
+
+.video-item {
+    width: 220px;
+    height: 160px;
+    padding: 10px;
+    float: left;  
+}
+
+.video-caption {
+    font: 15px helvetica, sans-serif;
+    color: #333;    
+}
+
+.thumbnail {
+    width: 220px;
+    height: 124px;    
 }
 
 /* Fonts */
-.futuratodaynormal {
-    font-family: FuturaToday;
-    margin: 45px 0 6px;
+.futuratoday {
+    font-family: 'FuturaToday';
     text-transform: uppercase;
-    font-size: 48px;
 }
 .futuratodaybold {
+    font-family: 'FuturaTodayBold';    
     text-transform: uppercase;
 }
 .futuratodaylight {
-    font-family: FuturaTodayLight;
-    margin: 45px 0 6px;
+    font-family: 'FuturaTodayLight';
     text-transform: uppercase;
-    font-size: 48px;
 }
 .pragroman {
-    font-family: PragRoman;
+    font-family: 'PragRoman';
     margin: 45px 0 6px;
     text-transform: uppercase;
-    font-size: 48px;
 }
 
 /* Logos */
