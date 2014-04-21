@@ -3,16 +3,17 @@ var Scene1 =
 	elem: null,
 	handler: null
 };
+// var SceneArray = [Scene1, Scene2, Scene3, Scene4, Scene5];
 
 Scene1.init = function () {
-	this.elem = jQuery('#scene1');
+	this.elem = $('#scene1');
 	this.handler = this.elem.find('a');
 
 	Scene1.init = function(){};
 }
 
 Scene1.show = function() {
-	this.elem.show();	
+	this.elem.show();
 }
 
 Scene1.hide = function() {
@@ -38,14 +39,14 @@ var Scene2 =
 };
 
 Scene2.init = function () {
-	this.elem = jQuery('#Scene2');
+	this.elem = $('#scene2');
 	this.handler = this.elem.find('a');
 
 	Scene2.init = function(){};
 }
 
 Scene2.show = function() {
-	this.elem.show();	
+	this.elem.show();
 }
 
 Scene2.hide = function() {
@@ -62,4 +63,12 @@ Scene2.load = function() {
 
 Scene2.unload = function() {
 	this.hide();
+}
+
+sceneSwitch = function(scene, scene2) {
+	console.log(scene, scene2);
+	scene.hide();
+    scene2.load();
+    scene2.show();
+    scene2.focus();	
 }

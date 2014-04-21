@@ -60,6 +60,8 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 
 .section-list > li a {
     display: block;
+    color: white;
+    text-decoration: none;
 }
 
 .section-list > li.selected:after {
