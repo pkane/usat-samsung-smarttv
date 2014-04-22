@@ -4,10 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>USATODAY</title>
 
-		<!-- TODO : Common API 
+		<!-- TODO : Common API -->
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
-	-->
+	
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 		<!-- TODO : Javascript code -->
@@ -32,16 +32,15 @@
 				<h3 class="section-heading futuratodaylight">Choose Section</h3>
 				<ul class="section-list">
 					<li class="futuratoday home active selected">
-						<a href="javascript:void(0);" id="anchor" onClick="sceneSwitch(Scene2, Scene1);" >HOME</a>						
+						<a href="javascript:void(0);" class="anchor" onkeyDown="Main.keyDown();" >HOME</a>						
 					</li> 				
 					<li class="futuratoday sports">
-						<a href="javascript:void(0);" id="anchor" onClick="sceneSwitch(Scene1, Scene2);">SPORTS</a>							
+						<a href="javascript:void(0);" class="anchor" onkeyDown="Main.keyDown();">SPORTS</a>							
 					</li>
 					<li class="futuratoday money">MONEY</li>
 					<li class="futuratoday life">LIFE</li>
 					<li class="futuratoday tech">TECH</li>
 					<li class="futuratoday travel">TRAVEL</li>
-					<li id="logo-overlay" class="logo-overlay"></li>
 				</ul>
 			</section>	
 			<section class="absolute index-wrapper">
@@ -77,13 +76,13 @@
 				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4"></video>			
 			</section>
 			<section id="scene2" class="scene">			
-				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3481307560001"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4"></video>			
 			</section>
 			<section id="scene3" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3481307560001"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4"></video>			
 			</section>
 			<section id="scene4" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3481307560001"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4"></video>			
 			</section>									
 		</section>
 	</body>

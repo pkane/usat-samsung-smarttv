@@ -10,27 +10,27 @@ Scene1.init = function () {
 	this.handler = this.elem.find('a');
 
 	Scene1.init = function(){};
-}
+};
 
 Scene1.show = function() {
 	this.elem.show();
-}
+};
 
 Scene1.hide = function() {
 	this.elem.hide();
-}
+};
 
 Scene1.focus = function() {
 	this.handler.focus();
-}
+};
 
 Scene1.load = function() {
 	this.init();
-}
+};
 
 Scene1.unload = function() {
 	this.hide();
-}
+};
 
 var Scene2 =
 {
@@ -43,27 +43,27 @@ Scene2.init = function () {
 	this.handler = this.elem.find('a');
 
 	Scene2.init = function(){};
-}
+};
 
 Scene2.show = function() {
 	this.elem.show();
-}
+;}
 
 Scene2.hide = function() {
 	this.elem.hide();
-}
+};
 
 Scene2.focus = function() {
 	this.handler.focus();
-}
+};
 
 Scene2.load = function() {
 	this.init();
-}
+};
 
 Scene2.unload = function() {
 	this.hide();
-}
+};
 
 sceneSwitch = function(scene, scene2) {
 	console.log(scene, scene2);
@@ -71,4 +71,4 @@ sceneSwitch = function(scene, scene2) {
     scene2.load();
     scene2.show();
     scene2.focus();	
-}
+};
