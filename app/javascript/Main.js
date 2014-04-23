@@ -10,6 +10,7 @@ Main.onLoad = function () {
     // Enable key event processing
     Main.enableKeys();
     widgetAPI.sendReadyEvent();
+    var Scene1 = new Scene ( $('#scene1'), null );    
     Scene1.load();
     Scene1.show();
     Scene1.focus();
@@ -31,34 +32,43 @@ Main.allHide = function () {
 };
 
 Main.selectNav = function(direction) {
-    var sectionList = $('.section-list');
-    var navKeys = sectionList.find('li');
-    var curSel = $('.active');
-    var firstChild = $(navKeys[0]);
-    var lastChild = $(navKeys[navKeys.length-1]);
+    var sectionList = $('.section-list'),
+        navKeys = sectionList.find('li'),
+        curSel = $('.selected'),
+        firstChild = $(navKeys[0]),
+        lastChild = $(navKeys[navKeys.length-1]);
     // If we're keying up
     if (direction == 'up') {  
         if (navKeys.index(curSel) == 0) {
-            console.log('first item');
-            lastChild.addClass('active');
+            lastChild.addClass('selected');
         } else {
-            console.log(navKeys.index(curSel));
             var next = navKeys.index(curSel)-1;
-            $(navKeys[next]).addClass('active');
+            $(navKeys[next]).addClass('selected');
         }
     // Otherwise we're moving down        
     } else {        
         if (navKeys.index(curSel) == navKeys.length-1) {
-            console.log('last item');
-            firstChild.addClass('active');  
+            firstChild.addClass('selected');  
         } else {
-            console.log(navKeys.index(curSel));
-            var prev = navKeys.index(curSel)+1
-            $(navKeys[prev]).addClass('active');
+            var prev = navKeys.index(curSel)+1;
+            $(navKeys[prev]).addClass('selected');
         } 
     }
-    $(curSel).removeClass('active');
+    $(curSel).removeClass('selected');
 };
+
+Main.switchScene = function() {
+    var sectionList = $('.section-list'),
+        navKeys = sectionList.find('li'),
+        curSel = $('.selected'),
+        curAct = $('.active'), 
+        oldAct = navKeys.index(curAct), // Index number of old selected
+        newAct = navKeys.index(curSel); // Index number of new selected
+        $(navKeys[oldAct]).removeClass('active'); // Take object at index of old selected and remove the active class
+        $(navKeys[newAct]).addClass('active'); // Take object at index of new selected and add active class
+    sceneSwitch($(navKeys[oldAct]).dataset, $(navKeys[newAct]).dataset);
+};
+
 
 Main.keyDown = function () {
     var keyCode = event.keyCode;
@@ -83,6 +93,8 @@ Main.keyDown = function () {
             Main.selectNav('down');        
             break;
         case tvKey.KEY_ENTER:
+            console.log(event);
+            Main.switchScene();
             break;
         default:
             alert("Unhandled key");

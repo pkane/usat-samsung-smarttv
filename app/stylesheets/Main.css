@@ -29,7 +29,7 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 }
 
 .scene {
-    /*display: none;*/
+    display: none;
 }
 
 .absolute {

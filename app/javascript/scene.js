@@ -1,74 +1,43 @@
-var Scene1 =
+Scene = function(elem, handler)
 {
-	elem: null,
-	handler: null
+	this.elem = null;
+	this.handler = null;
 };
-// var SceneArray = [Scene1, Scene2, Scene3, Scene4, Scene5];
 
-Scene1.init = function () {
-	this.elem = $('#scene1');
+Scene.init = function () {
+	this.elem = $('.scene');
 	this.handler = this.elem.find('a');
 
-	Scene1.init = function(){};
+	Scene.init = function(){};
 };
 
-Scene1.show = function() {
+Scene.show = function() {
 	this.elem.show();
 };
 
-Scene1.hide = function() {
+Scene.hide = function() {
 	this.elem.hide();
 };
 
-Scene1.focus = function() {
+Scene.focus = function() {
 	this.handler.focus();
 };
 
-Scene1.load = function() {
+Scene.load = function() {
 	this.init();
 };
 
-Scene1.unload = function() {
-	this.hide();
-};
-
-var Scene2 =
-{
-	elem: null,
-	handler: null
-};
-
-Scene2.init = function () {
-	this.elem = $('#scene2');
-	this.handler = this.elem.find('a');
-
-	Scene2.init = function(){};
-};
-
-Scene2.show = function() {
-	this.elem.show();
-;}
-
-Scene2.hide = function() {
-	this.elem.hide();
-};
-
-Scene2.focus = function() {
-	this.handler.focus();
-};
-
-Scene2.load = function() {
-	this.init();
-};
-
-Scene2.unload = function() {
+Scene.unload = function() {
 	this.hide();
 };
 
 sceneSwitch = function(scene, scene2) {
-	console.log(scene, scene2);
-	scene.hide();
-    scene2.load();
-    scene2.show();
-    scene2.focus();	
+	console.log(scene);
+	var oldScene = new Scene ( $(scene), null );
+	var newScene = new Scene ( $(scene2), null );	
+	oldScene.hide();
+	oldScene.unload();
+    newScene.load();
+    newScene.show();
+    newScene.focus();	
 };
