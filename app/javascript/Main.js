@@ -10,7 +10,18 @@ Main.onLoad = function () {
     // Enable key event processing
     Main.enableKeys();
     widgetAPI.sendReadyEvent();
-    var Scene1 = new Scene ( $('#scene1'), null );    
+    Scene1 = new Scene ($('#scene1'), null );  
+    Scene2 = new Scene ($('#scene2'), null );   
+    Scene3 = new Scene ($('#scene3'), null );  
+    Scene4 = new Scene ($('#scene4'), null );   
+    Scene5 = new Scene ($('#scene5'), null );  
+    Scene6 = new Scene ($('#scene6'), null );        
+    Scenes.elem[0] = Scene1;
+    Scenes.elem[1] = Scene2;
+    Scenes.elem[2] = Scene3;
+    Scenes.elem[3] = Scene4;
+    Scenes.elem[4] = Scene5;
+    Scenes.elem[5] = Scene6;        
     Scene1.load();
     Scene1.show();
     Scene1.focus();
@@ -57,20 +68,26 @@ Main.selectNav = function(direction) {
     $(curSel).removeClass('selected');
 };
 
-Main.switchScene = function() {
+Main.switchScene = function(arg1) {
     var sectionList = $('.section-list'),
         navKeys = sectionList.find('li'),
         curSel = $('.selected'),
         curAct = $('.active'), 
+        oldScene,
         oldAct = navKeys.index(curAct), // Index number of old selected
         newAct = navKeys.index(curSel); // Index number of new selected
         $(navKeys[oldAct]).removeClass('active'); // Take object at index of old selected and remove the active class
-        $(navKeys[newAct]).addClass('active'); // Take object at index of new selected and add active class
-    sceneSwitch($(navKeys[oldAct]).dataset, $(navKeys[newAct]).dataset);
+        $(navKeys[newAct]).addClass('active'); // Take object at index of new selected and add active class    
+    for (i=0; i<Scenes.elem.length; i++) {
+        if (Scenes.elem[i].elem.css('display') == 'block'){
+            oldScene = Scenes.elem[i];
+        }
+    }
+    Scenes.switch(oldScene, arg1);    
 };
 
 
-Main.keyDown = function () {
+Main.keyDown = function (arg1) {
     var keyCode = event.keyCode;
     alert("Key pressed: " + keyCode);
 
@@ -94,7 +111,7 @@ Main.keyDown = function () {
             break;
         case tvKey.KEY_ENTER:
             console.log(event);
-            Main.switchScene();
+            Main.switchScene(arg1);
             break;
         default:
             alert("Unhandled key");
