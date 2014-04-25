@@ -9,6 +9,7 @@ Scene = function(elem, handler) {
 
 	this.show = function() {
 		this.elem.show();
+		alert(this.elem, 'is visible');
 	};
 
 	this.hide = function() {

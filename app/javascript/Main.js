@@ -1,15 +1,25 @@
 var widgetAPI = new Common.API.Widget();
 var tvKey = new Common.API.TVKeyValue();
+var playerInstance = webapis.avplay;
 
 var Main = {
 
 };
 
+Main.onAVPlayObtained = function(avplay) {
+    Main.AVPlayer = avplay;
+    Main.AVPlayer.init();
+}
+
+Main.onGetAVPlayError = function() {
+    alert('######onGetAVPlayError:' + error.message);
+}
 
 Main.onLoad = function () {
     // Enable key event processing
     Main.enableKeys();
     widgetAPI.sendReadyEvent();
+    playerInstance.getAVPlay(Main.onAVPlayObtained, Main.onGetAVPlayError);    
     Scene1 = new Scene ($('#scene1'), null );  
     Scene2 = new Scene ($('#scene2'), null );   
     Scene3 = new Scene ($('#scene3'), null );  
@@ -25,6 +35,13 @@ Main.onLoad = function () {
     Scene1.load();
     Scene1.show();
     Scene1.focus();
+
+    // Load a media file
+    Main.AVPlayer.open("http://www.w3schools.com/tags/movie.mp4");
+
+    // Play the content
+    Main.AVPlayer.play();
+
 };
 
 Main.onUnload = function () {
