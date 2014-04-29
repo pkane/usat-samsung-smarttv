@@ -17,7 +17,7 @@ Main.onGetAVPlayError = function() {
 
 Main.onLoad = function () {
     // Enable key event processing
-    Main.enableKeys();
+    this.enableKeys();
     widgetAPI.sendReadyEvent();
     // playerInstance.getAVPlay(Main.onAVPlayObtained, Main.onGetAVPlayError);    
     Scene1 = new Scene ($('#scene1'), null );  
@@ -49,7 +49,7 @@ Main.onUnload = function () {
 };
 
 Main.enableKeys = function () {
-    $('.anchor').focus();
+    document.getElementById("anchor").focus();
 };
 
 Main.allHide = function () {
