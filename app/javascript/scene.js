@@ -4,12 +4,11 @@ Scene = function(elem, handler) {
 
 	this.init = function (arg) {
 		this.elem = $(arg);
-		this.handler = this.elem.find('a');
+		this.handler = this.elem.find('video');
 	};
 
 	this.show = function() {
 		this.elem.show();
-		alert(this.elem, 'is visible');
 	};
 
 	this.hide = function() {
@@ -21,12 +20,17 @@ Scene = function(elem, handler) {
 	};
 
 	this.load = function() {
-		this.init(this.elem);
+		this.init(this.elem);		
+		this.playVid();
 	};
 
 	this.unload = function() {
 		this.hide();
 	};
+
+	this.playVid = function() {
+		this.handler[0].play();
+	}
 }
 
 var Scenes = {

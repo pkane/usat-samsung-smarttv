@@ -9,15 +9,15 @@ var Main = {
 Main.onAVPlayObtained = function(avplay) {
     Main.AVPlayer = avplay;
     Main.AVPlayer.init();
-}
+};
 
 Main.onGetAVPlayError = function() {
     alert('######onGetAVPlayError:' + error.message);
-}
+};
 
 Main.onLoad = function () {
     // Enable key event processing
-    this.enableKeys();
+    Main.enableKeys();
     widgetAPI.sendReadyEvent();
     // playerInstance.getAVPlay(Main.onAVPlayObtained, Main.onGetAVPlayError);    
     Scene1 = new Scene ($('#scene1'), null );  
@@ -49,7 +49,7 @@ Main.onUnload = function () {
 };
 
 Main.enableKeys = function () {
-    document.getElementById("anchor").focus();
+    $('.anchor').focus();
 };
 
 Main.allHide = function () {
