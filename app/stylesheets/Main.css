@@ -40,9 +40,32 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     bottom: 0;
     width: 300px;
     height: 390px;
-    background: #12110E;
+    background: #000;
     left: 5%;    
     z-index: 1;
+}
+
+.nav.collapsed {
+    height: 30px;
+}
+
+.nav.details {
+    width: 1216px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.section-picker.collapsed > ul,
+.section-picker.details > ul,
+.section-picker.collapsed > .section-heading,
+.logo-size,
+.video-details  {
+    display: none;
+}
+
+.section-picker.collapsed > .logo-size,
+.section-picker.details > .video-details {
+    display: block;
 }
 
 .section-list {
@@ -76,9 +99,34 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 }
 
 .section-heading {
+    position: relative;
+    display: inline-block;
     font-size: 22px;
-    color: #ccc;
-    padding: 10px 0 10px 20px;    
+    color: #CCC;
+    padding: 10px 0 10px 20px;
+    width: 300px;
+    background: #000;
+}
+
+.video-details {
+    color: #FFF;
+    bottom: 26px;
+    position: relative;
+    padding: 0 30px;
+}
+
+.video-details > .logo-size {
+    width: 175px;
+    height: 75px;
+    float: left;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.details > .section-heading {
+    bottom: 47px;
 }
 
 .index-wrapper {
@@ -103,7 +151,21 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 
 .video-caption {
     font: 15px helvetica, sans-serif;
-    color: #333;    
+    color: #333;  
+}
+
+.details-caption {
+    font: 20px helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.details-label {
+    font: 15px helvetica, sans-serif;
+    display: inline-block;
+}
+
+.details-label.right {
+    float: right;
 }
 
 .thumbnail {
@@ -136,8 +198,8 @@ video {
 	height: 720px;
 }
 .logo-size {
-	width: 788px;
-	height: 163px;
+    margin: 4px 0 0 30px;
+    background-size: 100%;
 }
 .logo-header {
 	width: 515px;
@@ -152,7 +214,12 @@ video {
 	height: 91px;
 }
 .logo-main {
+    width: 140px;
+    height: 23px;    
     background-image: url(../../app/assets/logos/logo-main.png);
+}
+.logo-main.wide {
+    background-image: url(../assets/images/logos/logo-main-wide.png);
 }
 .logo-news {
     background-image: url(../../app/assets/logos/logo-news.png);
