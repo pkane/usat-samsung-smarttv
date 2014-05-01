@@ -43,28 +43,33 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     background: #000;
     left: 5%;    
     z-index: 1;
+    -webkit-transition: width 1s, height 1s,-webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s, transform 1s;
 }
 
-.nav.collapsed {
+.nav#collapsed,
+.nav#index_open {
     height: 30px;
 }
 
-.nav.details {
+.nav#details {
     width: 1216px;
     height: 120px;
     background: rgba(0, 0, 0, 0.8);
 }
 
-.section-picker.collapsed > ul,
-.section-picker.details > ul,
-.section-picker.collapsed > .section-heading,
+.section-picker#collapsed > ul,
+.section-picker#details > ul,
+.section-picker#index_open > ul,
+.section-picker#collapsed > .section-heading,
+.section-picker#index_open > .section-heading,
 .logo-size,
 .video-details  {
     display: none;
 }
 
-.section-picker.collapsed > .logo-size,
-.section-picker.details > .video-details {
+.section-picker#collapsed > .logo-size,
+.section-picker#details > .video-details {
     display: block;
 }
 
@@ -98,6 +103,14 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     bottom: 10px;
 }
 
+.section-list > li.return-index {
+    font-size: 12px;
+    text-transform: none;
+    right: 0;
+    position: absolute;
+    top: -40px;
+}
+
 .section-heading {
     position: relative;
     display: inline-block;
@@ -125,7 +138,7 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     margin: 0;
 }
 
-.details > .section-heading {
+#details > .section-heading {
     bottom: 47px;
 }
 
@@ -134,6 +147,7 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     bottom: 40%;    
     height: 180px;    
     width: 100%;
+    display: none;
 }
 
 .section-index { 

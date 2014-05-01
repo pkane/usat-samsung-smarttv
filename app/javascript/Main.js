@@ -36,6 +36,11 @@ Main.onLoad = function () {
     Scene1.show();
     Scene1.focus();
 
+    // var timer = window.setTimeout(function (){
+    //     nav = $('.nav');
+    //     $(nav).attr('id', 'collapsed');
+    // }, 5000);
+
     // // Load a media file
     // Main.AVPlayer.open("http://www.w3schools.com/tags/movie.mp4");
 
@@ -59,7 +64,64 @@ Main.allHide = function () {
 	}
 };
 
-Main.selectNav = function(direction) {
+Main.selectNav = function(arg1) {
+    var dir = arg1,
+        nav = $('.nav'),
+        nav_attr = nav.attr('id');
+    switch (dir) {
+        case 'up' :
+            switch (nav_attr) {
+                case 'expanded':
+                    alert('expanded');
+                    // We're in expanded nav and should traverse that menu instead              
+                    Main.selectDetails(dir);
+                    break;
+                case 'collapsed':
+                    alert('collapsed');
+                    $(nav).attr('id', 'details');
+                    break;                 
+                case 'details':
+                    alert('details');                                    
+                    $(nav).attr('id', 'index_open');     
+                    $('.index-wrapper').fadeIn(300);               
+                    break;
+                case 'index_open':
+                    alert('index open');                                    
+                    $(nav).attr('id', 'expanded');       
+                    $('.index-wrapper').fadeOut(300);             
+                    break;                       
+            }
+            break;
+
+        case 'down' :
+            switch (nav_attr) {
+                case 'expanded':
+                    alert('expanded');
+                    // We're in expanded nav and should traverse that menu instead   
+                    Main.selectDetails(dir);
+                    break;
+                case 'index_open':
+                    alert('index open');                                    
+                    $(nav).attr('id', 'details');       
+                    $('.index-wrapper').fadeOut(300);             
+                    break;                       
+                case 'details':
+                    alert('details');
+                    $(nav).attr('id', 'collapsed');                  
+                    break;                    
+                case 'collapsed':  
+                    alert('collapsed');              
+                    break;
+            }
+            break;
+
+        default:
+            break;            
+    }
+
+};
+
+Main.selectDetails = function(direction) {
     var sectionList = $('.section-list'),
         navKeys = sectionList.find('li'),
         curSel = $('.selected'),
@@ -85,6 +147,15 @@ Main.selectNav = function(direction) {
     $(curSel).removeClass('selected');
 };
 
+Main.parseEnter = function(arg1) {
+    var target = arg1;
+    if ($.type(target) == "string") {
+        $('.nav').attr('id', target);
+    } else {
+        Main.switchScene(target);
+    }
+};
+
 Main.switchScene = function(arg1) {
     var sectionList = $('.section-list'),
         navKeys = sectionList.find('li'),
@@ -102,7 +173,6 @@ Main.switchScene = function(arg1) {
     }
     Scenes.switch(oldScene, arg1);    
 };
-
 
 Main.keyDown = function (arg1) {
     var keyCode = event.keyCode;

@@ -38,9 +38,10 @@ var Scenes = {
 }
 
 Scenes.switch = function(scene, scene2) {
-	console.log(scene, scene2.elem);
-	scene.hide();
-	scene.unload();
+	if (scene) {
+		scene.hide();
+		scene.unload();
+	};
     scene2.load();
     scene2.show();
     scene2.focus();	
