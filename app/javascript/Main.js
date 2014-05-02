@@ -1,9 +1,12 @@
-// var widgetAPI = new Common.API.Widget();
-// var tvKey = new Common.API.TVKeyValue();
+var widgetAPI = new Common.API.Widget();
+var tvKey = new Common.API.TVKeyValue();
 // var playerInstance = webapis.avplay;
 
 var Main = {
-
+    returnIndex : {
+        elem : $('.return-index').find('ul > li'),
+        anchor: $('.return-index-anchor')
+    }
 };
 
 Main.onAVPlayObtained = function(avplay) {
@@ -34,8 +37,8 @@ Main.onLoad = function () {
     Scene1.focus();
 
     // Enable key event processing
-    // Main.enableKeys();
-    // widgetAPI.sendReadyEvent();    
+    Main.enableKeys();
+    widgetAPI.sendReadyEvent();    
 
     // var timer = window.setTimeout(function (){
     //     nav = $('.nav');
@@ -148,17 +151,17 @@ Main.selectDetails = function(direction) {
     $(curSel).removeClass('selected');
 };
 
-Main.parseEnter = function(arg1) {
+Main.parseString = function(arg1) {
+    console.log('parseString');    
     var target = arg1;
     if ($.type(target) == "string") {
         $('.nav').attr('id', target);
         return;
-    } else {
-        Main.switchScene(target);
     }
 };
 
 Main.switchScene = function(arg1) {
+    console.log('switchScene');
     var sectionList = $('.section-list'),
         navKeys = sectionList.find('li'),
         curSel = $('.selected'),
@@ -179,6 +182,7 @@ Main.switchScene = function(arg1) {
 Main.keyDown = function (arg1) {
     var keyCode = event.keyCode;
     alert("Key pressed: " + keyCode);
+    alert("scene: " + arg1);
 
     switch (keyCode) {
         case tvKey.KEY_RETURN:
@@ -186,11 +190,8 @@ Main.keyDown = function (arg1) {
             widgetAPI.sendReturnEvent();
             break;
         case tvKey.KEY_LEFT:
-            document.getElementById("heading").innerHTML = "Left";
-            alert("LEFT");
             break;
         case tvKey.KEY_RIGHT:
-            document.getElementById("heading").innerHTML = "Right";
             break;
         case tvKey.KEY_UP:
             Main.selectNav('up');
@@ -199,7 +200,35 @@ Main.keyDown = function (arg1) {
             Main.selectNav('down');        
             break;
         case tvKey.KEY_ENTER:
-            Main.parseEnter(arg1);
+                Main.switchScene(arg1);                                
+            break;
+        default:
+            alert("Unhandled key");
+            break;
+    }
+};
+
+Main.returnIndex.keyDown = function (arg1) {
+    var keyCode = event.keyCode;
+    alert("Key pressed: " + keyCode);
+    alert("string: " + arg1);
+
+    switch (keyCode) {
+        case tvKey.KEY_RETURN:
+            widgetAPI.sendReturnEvent();
+            break;
+        case tvKey.KEY_LEFT:
+            break;
+        case tvKey.KEY_RIGHT:
+            break;
+        case tvKey.KEY_UP:
+            Main.selectNav('up');
+            break;
+        case tvKey.KEY_DOWN:
+            Main.selectNav('down');        
+            break;
+        case tvKey.KEY_ENTER:
+            Main.parseString(arg1);            
             break;
         default:
             alert("Unhandled key");
