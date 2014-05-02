@@ -26,11 +26,16 @@ Scene = function(elem, handler) {
 
 	this.unload = function() {
 		this.hide();
+		this.pauseVid();		
 	};
 
 	this.playVid = function() {
 		this.handler[0].play();
 	}
+
+	this.pauseVid = function() {
+		this.handler[0].pause();
+	}	
 }
 
 var Scenes = {

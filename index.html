@@ -4,10 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>USATODAY</title>
 
-		<!-- TODO : Common API -->
+		<!-- TODO : Common API 
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
-		<!-- <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script> -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script> -->
 	
 		<script language="javascript" type="text/javascript" src="app/javascript/jquery-2.0.3-dev.js"></script>
 
@@ -29,30 +29,30 @@
 		<section class="main-view">
 			<h1 id="heading"></h1>
 			<!-- Choose your section -->		
-			<section class="absolute nav section-picker anchor" id="details">
+			<section class="absolute nav section-picker anchor" id="expanded">
 				<h3 class="section-heading futuratodaylight">Choose Section</h3>
 				<div class="logo-size logo-main wide"></div>
 				<ul class="section-list">
 					<li class="futuratoday return-index" data-rel="return">
-						<a href="javascript:void(0);" class="anchor" onkeyDown="Main.keyDown('index_open');">return</a>
+						<a href="javascript:void(0);" class="anchor" onclick="Main.parseEnter('index_open');">return</a>
 					</li> 					
 					<li class="futuratoday home active selected" data-rel="scene1">
-						<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown(Scene1);">HOME</a>						
+						<a href="javascript:void(0);" class="anchor" onclick="Main.switchScene(Scene1);">HOME</a>						
 					</li> 				
 					<li class="futuratoday sports" data-rel="scene2">
-						<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown(Scene2);">SPORTS</a>							
+						<a href="javascript:void(0);" class="anchor" onclick="Main.switchScene(Scene2);">SPORTS</a>							
 					</li>
 					<li class="futuratoday money" data-rel="scene3">
-						<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown(Scene3);">MONEY</a>
+						<a href="javascript:void(0);" class="anchor" onclick="Main.switchScene(Scene3);">MONEY</a>
 					</li>
 					<li class="futuratoday life" data-rel="scene4">
-						<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown(Scene4);">LIFE</a>
+						<a href="javascript:void(0);" class="anchor" onclick="Main.switchScene(Scene4);">LIFE</a>
 					</li>
 					<li class="futuratoday tech" data-rel="tech">
-						<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown(Scene5);">TECH</a>
+						<a href="javascript:void(0);" class="anchor" onclick="Main.switchScene(Scene5);">TECH</a>
 					</li>
 					<li class="futuratoday travel" data-rel="travel">
-						<a href="javascript:void(0);" class="anchor" onkeydown="Main.keyDown(Scene6);">TRAVEL</a>
+						<a href="javascript:void(0);" class="anchor" onclick="Main.switchScene(Scene6);">TRAVEL</a>
 					</li>
 				</ul>
 				<section class="video-details">

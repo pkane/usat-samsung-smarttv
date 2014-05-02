@@ -1,5 +1,5 @@
-var widgetAPI = new Common.API.Widget();
-var tvKey = new Common.API.TVKeyValue();
+// var widgetAPI = new Common.API.Widget();
+// var tvKey = new Common.API.TVKeyValue();
 // var playerInstance = webapis.avplay;
 
 var Main = {
@@ -34,8 +34,8 @@ Main.onLoad = function () {
     Scene1.focus();
 
     // Enable key event processing
-    Main.enableKeys();
-    widgetAPI.sendReadyEvent();    
+    // Main.enableKeys();
+    // widgetAPI.sendReadyEvent();    
 
     // var timer = window.setTimeout(function (){
     //     nav = $('.nav');
