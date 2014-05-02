@@ -16,9 +16,6 @@ Main.onGetAVPlayError = function() {
 };
 
 Main.onLoad = function () {
-    // Enable key event processing
-    Main.enableKeys();
-    widgetAPI.sendReadyEvent();
     // playerInstance.getAVPlay(Main.onAVPlayObtained, Main.onGetAVPlayError);    
     Scene1 = new Scene ($('#scene1'), null );  
     Scene2 = new Scene ($('#scene2'), null );   
@@ -35,6 +32,10 @@ Main.onLoad = function () {
     Scene1.load();
     Scene1.show();
     Scene1.focus();
+
+    // Enable key event processing
+    Main.enableKeys();
+    widgetAPI.sendReadyEvent();    
 
     // var timer = window.setTimeout(function (){
     //     nav = $('.nav');
@@ -198,7 +199,6 @@ Main.keyDown = function (arg1) {
             Main.selectNav('down');        
             break;
         case tvKey.KEY_ENTER:
-            console.log(event);
             Main.parseEnter(arg1);
             break;
         default:
