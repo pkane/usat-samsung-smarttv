@@ -151,6 +151,7 @@ Main.parseEnter = function(arg1) {
     var target = arg1;
     if ($.type(target) == "string") {
         $('.nav').attr('id', target);
+        return;
     } else {
         Main.switchScene(target);
     }
@@ -198,7 +199,7 @@ Main.keyDown = function (arg1) {
             break;
         case tvKey.KEY_ENTER:
             console.log(event);
-            Main.switchScene(arg1);
+            Main.parseEnter(arg1);
             break;
         default:
             alert("Unhandled key");
