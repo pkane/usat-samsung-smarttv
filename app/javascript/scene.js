@@ -36,13 +36,13 @@ Scene = function(elem, handler) {
 	this.pauseVid = function() {
 		this.handler[0].pause();
 	}	
-}
+};
 
 var Scenes = {
 	elem : new Array()
-}
+};
 
-Scenes.switch = function(scene, scene2) {
+Scenes.sceneSwitch = function(scene, scene2) {
 	if (scene) {
 		scene.hide();
 		scene.unload();
