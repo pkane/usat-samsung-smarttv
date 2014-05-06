@@ -1,6 +1,7 @@
 var widgetAPI = new Common.API.Widget();
 var tvKey = new Common.API.TVKeyValue();
 // var playerInstance = webapis.avplay;
+var parseTar = 'index_open';
 
 var Main = {
     returnIndex : {
@@ -163,26 +164,33 @@ Main.switchScene = function() {
         curSel = $('.selected'),
         curAct = $('.active'), 
         oldScene,
+        newRel,
         newScene,
         oldAct = navKeys.index(curAct), // Index number of old selected
         newAct = navKeys.index(curSel); // Index number of new selected
         $(navKeys[oldAct]).removeClass('active'); // Take object at index of old selected and remove the active class
         $(navKeys[newAct]).addClass('active'); // Take object at index of new selected and add active class   
-        newScene = $(navKeys[newAct]).dataset[0]; 
+        newRel = $(navKeys[newAct]);
+        newData = newRel.data();
     for (i=0; i<Scenes.elem.length; i++) {
         if (Scenes.elem[i].elem.css('display') == 'block'){
             oldScene = Scenes.elem[i];
+        } else if (Scenes.elem[i].elem.selector == newData.rel) {
+            newScene = Scenes.elem[i];
         }
     }
     Scenes.sceneSwitch(oldScene, newScene);    
 };
 
-Main.keyDown = function (arg1) {
+Main.keyDown = function () {
     var keyCode = event.keyCode;
 
     switch (keyCode) {
         case tvKey.KEY_RETURN:
-            widgetAPI.sendReturnEvent();
+            // widgetAPI.sendReturnEvent();
+            if ($.type(parseTar) == "string") {
+                Main.returnIndex.parseString(parseTar);            
+            }             
             break;
         case tvKey.KEY_LEFT:
             break;
@@ -195,11 +203,7 @@ Main.keyDown = function (arg1) {
             Main.selectNav('down');            
             break;
         case tvKey.KEY_ENTER:
-            if ($.type(arg1) == "string") {
-                Main.returnIndex.parseString(arg1);            
-            } else {
-                Main.switchScene();                                
-            }            
+            Main.switchScene();                                
             break;
         default:
             alert("Unhandled key");
@@ -227,40 +231,4 @@ Main.returnIndex.parseString = function(arg1) {
     console.log('parseString');    
     var target = arg1.toString();
     $('.nav').attr('id', target);
-};
-
-Main.returnIndex.keyDown = function (arg1) {
-    var keyCode = event.keyCode;
-    alert("string: " + arg1.toString());
-
-    switch (keyCode) {
-        case tvKey.KEY_RETURN:
-            widgetAPI.sendReturnEvent();
-            break;
-        case tvKey.KEY_LEFT:
-            break;
-        case tvKey.KEY_RIGHT:
-            break;
-        case tvKey.KEY_UP:
-            Main.returnIndex.disableKeys();
-            Main.enableKeys();
-            Main.selectNav('up');            
-            break;
-        case tvKey.KEY_DOWN:         
-            Main.returnIndex.disableKeys();
-            Main.enableKeys();
-            Main.selectNav('down');            
-            break;
-        case tvKey.KEY_ENTER:
-            if ($.type(arg1) == "string") {
-                Main.returnIndex.parseString(arg1);            
-            } else {
-                Main.returnIndex.disableKeys();                
-                Main.switchScene();                                
-            }
-            break;
-        default:
-            alert("Unhandled key");
-            break;
-    }
 };

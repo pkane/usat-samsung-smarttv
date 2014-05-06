@@ -31,6 +31,7 @@ Scene = function(elem, handler) {
 
 	this.playVid = function() {
 		this.handler[0].play();
+		console.log('play vid');
 	}
 
 	this.pauseVid = function() {
@@ -50,4 +51,6 @@ Scenes.sceneSwitch = function(scene, scene2) {
     scene2.load();
     scene2.show();
     scene2.focus();	
+    console.log(scene);
+    console.log(scene2);
 };
