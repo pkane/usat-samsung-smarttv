@@ -52,6 +52,10 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     height: 30px;
 }
 
+.nav#index_open {
+    height: 0;
+}
+
 .nav#details {
     width: 1216px;
     height: 120px;
@@ -62,7 +66,6 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 .section-picker#details > ul,
 .section-picker#index_open > ul,
 .section-picker#collapsed > .section-heading,
-.section-picker#index_open > .section-heading,
 .logo-size,
 .video-details  {
     display: none;
@@ -142,9 +145,13 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     bottom: 47px;
 }
 
+#index_open > .section-heading {
+    /*bottom: 444px;*/
+}
+
 .index-wrapper {
     overflow-x: auto;    
-    bottom: 40%;    
+    bottom: 30%;    
     height: 180px;    
     width: 100%;
     display: none;

@@ -36,6 +36,7 @@ Main.onLoad = function () {
     Scene1.load();
     Scene1.show();
     Scene1.focus();
+    Scenes.sceneSwitch(null, Scene1);        
 
     // Enable key event processing
     Main.enableKeys();
@@ -188,6 +189,7 @@ Main.keyDown = function () {
     switch (keyCode) {
         case tvKey.KEY_RETURN:
             // widgetAPI.sendReturnEvent();
+            event.preventDefault();
             if ($.type(parseTar) == "string") {
                 Main.returnIndex.parseString(parseTar);            
             }             
