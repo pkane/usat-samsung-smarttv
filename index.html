@@ -7,12 +7,15 @@
 		<!-- TODO : Common API -->
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+
 		<!-- <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script> -->
 	
 		<script language="javascript" type="text/javascript" src="app/javascript/jquery-2.0.3-dev.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js" type="text/javascript"></script>		
 
 		<!-- TODO : Javascript code -->
-		<script language="javascript" type="text/javascript" src="app/javascript/Main.js"></script>
+		<script language="javascript" type="text/javascript" src="app/javascript/App.js"></script>
+		<script language="javascript" type="text/javascript" src="app/javascript/maincontroller.js"></script>		
 		<script language="javascript" type="text/javascript" src="app/javascript/scene.js"></script>
 
 		<!-- TODO : Style sheets code -->
@@ -22,11 +25,11 @@
 
 	</head>
 
-	<body onload="Main.onLoad();" onunload="Main.onUnload();">		
+	<body onload="Main.onLoad();" onunload="Main.onUnload();" >		
 
 		<!-- TODO: your code here -->		
 
-		<section class="main-view">
+		<section class="main-view" ng-app="usatSmartTv" ng-controller='mainController'>
 			<h1 id="heading"></h1>
 			<!-- Choose your section -->		
 			<section class="absolute nav section-picker anchor" id="expanded">
@@ -96,22 +99,23 @@
 				</div>
 			</section>
 			<section id="scene1" class="scene">			
-				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video>				
+				<!-- <video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video> -->
+				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="{{sections.news}}"></video>
 			</section>
-			<section id="scene2" class="scene">			
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4"></video>			
+			<section id="scene2" class="scene">
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.sports}}"></video>			
 			</section>
 			<section id="scene3" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530516356001_usat86ee36cf-a4c8-42ef-ad2b-eb04736edb3e.mp4"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.money}}"></video>			
 			</section>
 			<section id="scene4" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530582491001_usat6860fe58-4d44-4310-9431-2e90976f53cf.mp4"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.life}}"></video>			
 			</section>		
 			<section id="scene5" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530293413001_usat2b542485-3ca0-4e86-9bf7-101dd6430608.mp4"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.tech}}"></video>
 			</section>
 			<section id="scene6" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3529185858001_ProcamsD6141-Strategies-for-Preventing-Skin-Cancer.mp4"></video>			
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.travel}}"></video>
 			</section>													
 		</section>
 	</body>
