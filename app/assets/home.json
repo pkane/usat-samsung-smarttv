@@ -1,0 +1,1379 @@
+{
+attributes: {
+site: "1",
+api: "v1",
+front: "Home_Tablet_Video",
+layout: "VideoIndex",
+aws: "homepage"
+},
+modules: {
+Items: {
+attributes: {
+name: "Content List",
+displayName: "Items",
+position: "0"
+},
+content: [
+{
+id: 8854585,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/money/markets/2014/05/08/8854585/",
+mobileUrl: "http://usat.ly/Rvk90J",
+ssts: {
+section: "money",
+subsection: "markets",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "markets",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546982679001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 2:15:48 PM",
+user: "dcarrig",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: null,
+name: "The Dow is back, but doubts remain",
+shortdescription: "The Dow is back in record territory, but don't expect the glory days of 2013 to return, Adam Shell reports.",
+tags: null,
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547021096001_th-536bb21fe4b062ca1b8a2e41-1592194028001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547021094001_vs-536bb21fe4b062ca1b8a2e41-1592194028001.jpg?pubId=29906170001",
+startdate: null,
+enddate: null,
+length: "02:26",
+credit: "USA TODAY",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 2:15:48 PM",
+updatedate: "5/8/2014 2:31:39 PM",
+lastpublisheddate: "5/8/2014 2:31:39 PM",
+initialpublishdate: "5/8/2014 2:31:38 PM",
+embargodate: "",
+aws: "money/markets"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547021087001_The-Dow-is-back--but-doubts-remain.mp4",
+EncodingRate: 1734666,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547031943001_The-Dow-is-back--but-doubts-remain.mp4",
+EncodingRate: 1162666,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547027849001_The-Dow-is-back--but-doubts-remain.mp4",
+EncodingRate: 785117,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547021092001_The-Dow-is-back--but-doubts-remain.mp4",
+EncodingRate: 362666,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547030241001_The-Dow-is-back--but-doubts-remain.mp4",
+EncodingRate: 174219,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546982679001"
+}
+}
+}
+},
+{
+id: 8855319,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/nation/2014/05/08/8855319/",
+mobileUrl: "http://usat.ly/Rvk1hD",
+ssts: {
+section: "news",
+subsection: "nation",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "nation",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3547288206001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 2:29:57 PM",
+user: "mwashington",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: "U.S. Air Force",
+name: "Dover Air Force base locked down for suspicious person",
+shortdescription: "Dover Air Force Base has been locked down since about 11:30 a.m. May 8, 2014, due to a suspicious person. (05/08/14)",
+tags: "sato,dover,del,News,Military,delbest",
+thumbnail: "http://download.gannett.edgesuite.net/newsjour/brightcove/29913743001/201405/624/29913743001_3547206422001_0508-dafb-lockdown-th.jpg?pubId=29913743001",
+videostill: "http://download.gannett.edgesuite.net/newsjour/brightcove/29913743001/201405/624/29913743001_3547206406001_0508-dafb-lockdown-vs.jpg?pubId=29913743001",
+startdate: null,
+enddate: null,
+length: "00:50",
+credit: "The (Wilmington, Del.) News Journal",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 2:29:56 PM",
+updatedate: "5/8/2014 2:31:00 PM",
+lastpublisheddate: "5/8/2014 2:31:00 PM",
+initialpublishdate: "5/8/2014 2:30:58 PM",
+embargodate: "",
+aws: "news/national"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/3616/29913743001_3547291423001_0508-dafb-lockdown2.mp4",
+EncodingRate: 5077249,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/2304/29913743001_3547285995001_0508-dafb-lockdown2.mp4",
+EncodingRate: 2002694,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/680/29913743001_3547291418001_0508-dafb-lockdown2.mp4",
+EncodingRate: 1222889,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/1232/29913743001_3547291853001_0508-dafb-lockdown2.mp4",
+EncodingRate: 749249,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/616/29913743001_3547291436001_0508-dafb-lockdown2.mp4",
+EncodingRate: 499683,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/2616/29913743001_3547291426001_0508-dafb-lockdown2.mp4",
+EncodingRate: 337683,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp21774.edgefcs.net/ondemand/&mp4:brightcove/29913743001/201405/1616/29913743001_3547291449001_0508-dafb-lockdown2.mp4",
+EncodingRate: 251683,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3547288206001"
+}
+}
+}
+},
+{
+id: 8854163,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/2014/05/08/8854163/",
+mobileUrl: "http://usat.ly/1jkZZl0",
+ssts: {
+section: "news",
+subsection: "",
+topic: null,
+subtopic: null,
+storysubject: null,
+leafName: "news",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3547201119001",
+name: "Johnny Manziel's hometown wants him to stay in Texas",
+shortdescription: "As football fans await for the 2014 NFL draft, residents of Johnny Manziel's hometown know exactly where they want him to end up: Texas.",
+tags: "2014 NFL draft,johnny manziel,johnny manziel in the nfl,KHOU,nfl,sports,johnny football",
+source: "VPC",
+origin: "VPC",
+autoarchive: "true",
+adsenabled: "true",
+startdate: "1/1/0001 12:00:00 AM",
+enddate: "1/1/0001 12:00:00 AM",
+gannetttracking: "VPC_HOMETOWN OPINION OF JOHNNY MANZIEL-W050614Gannett",
+longdescription: null,
+viraldistribution: "true",
+user: "VTM",
+datecreated: "5/8/2014 2:04:05 PM",
+credit: "VPC",
+propertyid: "1",
+brightcoveaccount: "VPC_HOMETOWN OPINION OF JOHNNY MANZIEL-W050614Gannett",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547242951001_thumbnail-for-video-3547201119001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547242961001_video-still-for-video-3547201119001.jpg?pubId=29906170001",
+status: "complete",
+length: "02:42",
+keywords: "Johnny Manziel",
+interactive: "false",
+createdate: "5/8/2014 2:04:05 PM",
+updatedate: "5/8/2014 2:04:10 PM",
+lastpublisheddate: "5/8/2014 2:04:10 PM",
+initialpublishdate: "5/8/2014 2:04:08 PM",
+embargodate: "",
+aws: "news"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547234235001_usatc9640e1a-321a-41d5-9867-c52928857055.mp4",
+EncodingRate: 1754706,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547227355001_usatc9640e1a-321a-41d5-9867-c52928857055.mp4",
+EncodingRate: 1182706,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547232527001_usatc9640e1a-321a-41d5-9867-c52928857055.mp4",
+EncodingRate: 701503,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547232307001_usatc9640e1a-321a-41d5-9867-c52928857055.mp4",
+EncodingRate: 344957,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547227348001_usatc9640e1a-321a-41d5-9867-c52928857055.mp4",
+EncodingRate: 152859,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3547201119001"
+}
+}
+}
+},
+{
+id: 8853801,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/2014/05/08/8853801/",
+mobileUrl: "http://usat.ly/1jkXyio",
+ssts: {
+section: "news",
+subsection: "",
+topic: null,
+subtopic: null,
+storysubject: null,
+leafName: "news",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3547057147001",
+name: "Police: Accelerant used in fire at James Blake's home",
+shortdescription: "Investigators are still trying to determine exactly what caused the fire that has left four people dead inside the home owned by tennis pro James Blake. However, they confirm that an unknown accelerant was used.",
+tags: "james blakes mansion,fire at james blakes home,wtsp,National News,Florida",
+source: "VPC",
+origin: "VPC",
+autoarchive: "true",
+adsenabled: "true",
+startdate: "1/1/0001 12:00:00 AM",
+enddate: "1/1/0001 12:00:00 AM",
+gannetttracking: "VPC_TENNIS PLAYER MANSION FIRE-W050814WTSP",
+longdescription: null,
+viraldistribution: "true",
+user: "VTM",
+datecreated: "5/8/2014 1:54:06 PM",
+credit: "VPC",
+propertyid: "1",
+brightcoveaccount: "VPC_TENNIS PLAYER MANSION FIRE-W050814WTSP",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547220441001_thumbnail-for-video-3547057147001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547220445001_video-still-for-video-3547057147001.jpg?pubId=29906170001",
+status: "complete",
+length: "01:08",
+keywords: "James Blake",
+interactive: "false",
+createdate: "5/8/2014 1:54:06 PM",
+updatedate: "5/8/2014 1:54:10 PM",
+lastpublisheddate: "5/8/2014 1:54:10 PM",
+initialpublishdate: "5/8/2014 1:54:09 PM",
+embargodate: "",
+aws: "news"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547210356001_usatb61db373-241d-47a5-9aa9-b70caf83455a.mp4",
+EncodingRate: 1761210,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547213456001_usatb61db373-241d-47a5-9aa9-b70caf83455a.mp4",
+EncodingRate: 1189210,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547211876001_usatb61db373-241d-47a5-9aa9-b70caf83455a.mp4",
+EncodingRate: 708854,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547208879001_usatb61db373-241d-47a5-9aa9-b70caf83455a.mp4",
+EncodingRate: 343932,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547211827001_usatb61db373-241d-47a5-9aa9-b70caf83455a.mp4",
+EncodingRate: 143344,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3547057147001"
+}
+}
+}
+},
+{
+id: 8853285,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/money/cars/2014/05/08/8853285/",
+mobileUrl: "http://usat.ly/1jkXgbs",
+ssts: {
+section: "money",
+subsection: "cars",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "cars",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546742874001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 1:43:49 PM",
+user: "cwoodyar",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: null,
+name: "At 80, Michigan man [plans to keep driving",
+shortdescription: "After 64 years on the road, Ray Kolpacki says he's not ready to turn over his keys just yet.",
+tags: "robin erb,DFP senior driving,Ray Kolpacki,News",
+thumbnail: "http://bcdownload.gannett.edgesuite.net/detroitfreep/35547428001/201405/2784/35547428001_3545223274001_IMG-9041-th.jpg?pubId=35547428001",
+videostill: "http://bcdownload.gannett.edgesuite.net/detroitfreep/35547428001/201405/2784/35547428001_3545223270001_IMG-9041-vs.jpg?pubId=35547428001",
+startdate: null,
+enddate: null,
+length: "01:08",
+credit: "Detroit Free Press",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 1:43:48 PM",
+updatedate: "5/8/2014 1:53:16 PM",
+lastpublisheddate: "5/8/2014 1:53:16 PM",
+initialpublishdate: "5/8/2014 1:53:15 PM",
+embargodate: "",
+aws: "auto"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222448001_IMG-9041.mp4",
+EncodingRate: 1783689,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222488001_IMG-9041.mp4",
+EncodingRate: 1183689,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545223313001_IMG-9041.mp4",
+EncodingRate: 784209,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222471001_IMG-9041.mp4",
+EncodingRate: 592209,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222459001_IMG-9041.mp4",
+EncodingRate: 484000,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546742874001"
+}
+}
+}
+},
+{
+id: 8853299,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/money/cars/2014/05/08/8853299/",
+mobileUrl: "http://usat.ly/1jkUB1m",
+ssts: {
+section: "money",
+subsection: "cars",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "cars",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546742874001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 1:43:53 PM",
+user: "cwoodyar",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: null,
+name: "At 80, Michigan man says he can still drive",
+shortdescription: "After 64 years on the road, Ray Kolpacki says he's not ready to turn over his keys just yet.",
+tags: "robin erb,DFP senior driving,Ray Kolpacki,News",
+thumbnail: "http://bcdownload.gannett.edgesuite.net/detroitfreep/35547428001/201405/2784/35547428001_3545223274001_IMG-9041-th.jpg?pubId=35547428001",
+videostill: "http://bcdownload.gannett.edgesuite.net/detroitfreep/35547428001/201405/2784/35547428001_3545223270001_IMG-9041-vs.jpg?pubId=35547428001",
+startdate: null,
+enddate: null,
+length: "01:08",
+credit: "Detroit Free Press",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 1:43:53 PM",
+updatedate: "5/8/2014 1:45:43 PM",
+lastpublisheddate: "5/8/2014 1:45:43 PM",
+initialpublishdate: "5/8/2014 1:45:42 PM",
+embargodate: "",
+aws: "auto"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222448001_IMG-9041.mp4",
+EncodingRate: 1783689,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222488001_IMG-9041.mp4",
+EncodingRate: 1183689,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545223313001_IMG-9041.mp4",
+EncodingRate: 784209,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222471001_IMG-9041.mp4",
+EncodingRate: 592209,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp81310.edgefcs.net/ondemand/&mp4:brightcove/35547428001/201405/2784/35547428001_3545222459001_IMG-9041.mp4",
+EncodingRate: 484000,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546742874001"
+}
+}
+}
+},
+{
+id: 8851969,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/2014/05/08/8851969/",
+mobileUrl: "http://usat.ly/Rv6HK9",
+ssts: {
+section: "news",
+subsection: "",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "news",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3547059217001",
+name: "This high school basketball player is taller than Shaq",
+shortdescription: "Meet Elhadji Tacko Fall, the tallest high school basketball player in the U.S. He's already taller than Shaquille O'Neal and doctors say he is still growing.",
+tags: "tall nba players,tavares,wtsp,tallest basketball player,Florida,water cooler,offbeat,high school basketball",
+source: "VPC",
+origin: "VPC",
+autoarchive: "true",
+adsenabled: "True",
+startdate: null,
+enddate: null,
+gannetttracking: "VPC_TALLEST HIGH SCHOOL BASKETBALL PLAYER-W050814WTSP",
+longdescription: null,
+viraldistribution: "true",
+user: "afox",
+datecreated: "5/8/2014 1:09:05 PM",
+credit: "VPC",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+thumbnail: "http://www.gannett-cdn.com/-mm-/33d97f8a03d5ea06baca0f7a30eca34c8bd87643/r=500x281/local/-/media/USATODAY/USATODAY/2014/05/08/1399569982000-TALLESTBALLPLAYER.jpg",
+videostill: "http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+status: "complete",
+length: "01:16",
+keywords: "Shaquille O'Neal",
+imageid: "8852605",
+thumbnailTiny: "http://moc-assets-prod.gannett-cdn.com/-mm-/97601890f96f591d91504aa843ef3f9a1240b140/c=161-0-1119-719&r=115x86/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+bcunfilteredtoken: null,
+bcreadtoken: null,
+bcwritetoken: null,
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 1:09:05 PM",
+updatedate: "5/8/2014 1:26:57 PM",
+lastpublisheddate: "5/8/2014 1:26:57 PM",
+initialpublishdate: "5/8/2014 1:09:08 PM",
+embargodate: "",
+aws: "news"
+},
+crops: {
+1_1: "http://www.gannett-cdn.com/-mm-/403c7977af408c0015ba85e73be8865931cd19c9/c=282-0-1001-719/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+4_3: "http://www.gannett-cdn.com/-mm-/fa75febe3f1ec3ee70e3dcfda0a0de98456c7b84/c=161-0-1119-719/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+3_4: "http://www.gannett-cdn.com/-mm-/a318921e9459cb0e8ef3c7761d5a24d0f9a41c63/c=371-0-911-719/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+16_9: "http://www.gannett-cdn.com/-mm-/c256be877cb5feb7b087db5c94efb4583aa6062e/c=5-0-1277-719/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+9_16: "http://www.gannett-cdn.com/-mm-/aa06d32b3cf62c531d8a3a8fc3274656550536a2/c=440-0-842-719/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg",
+front_thumb: "http://www.gannett-cdn.com/-mm-/6b2bf694f6bd7bf58af0a19753ad09f083e774e2/c=220-0-1062-719/local/-/media/USATODAY/USATODAY/2014/05/08//1399569982000-TALLESTBALLPLAYER.jpg"
+},
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547081895001_usat578c6c8a-09cf-4302-95bc-9859020cdef1.mp4",
+EncodingRate: 1771841,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547077068001_usat578c6c8a-09cf-4302-95bc-9859020cdef1.mp4",
+EncodingRate: 1199841,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547077030001_usat578c6c8a-09cf-4302-95bc-9859020cdef1.mp4",
+EncodingRate: 714004,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547077054001_usat578c6c8a-09cf-4302-95bc-9859020cdef1.mp4",
+EncodingRate: 345883,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547081767001_usat578c6c8a-09cf-4302-95bc-9859020cdef1.mp4",
+EncodingRate: 153728,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3547059217001"
+}
+}
+}
+},
+{
+id: 8852205,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/life/movies/2014/05/08/8852205/",
+mobileUrl: "http://usat.ly/1jkMBxf",
+ssts: {
+section: "life",
+subsection: "movies",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "movies",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3547046520001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 1:17:43 PM",
+user: "btruitt",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: null,
+name: "Exclusive clip: Horror comedy 'All Cheerleaders Die'",
+shortdescription: "A group of cheerleaders wakes up very different â€”Â along with a cat that has a tendency to come back to life â€”Â in the horror comedy "All Cheerleaders Die."",
+tags: "movies,entertainment",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547133905001_thumbnail-for-video-3547046520001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547133906001_video-still-for-video-3547046520001.jpg?pubId=29906170001",
+startdate: null,
+enddate: null,
+length: "02:01",
+credit: "RLJ/Image Entertainment",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 1:17:42 PM",
+updatedate: "5/8/2014 1:21:04 PM",
+lastpublisheddate: "5/8/2014 1:21:04 PM",
+initialpublishdate: "5/8/2014 1:21:02 PM",
+embargodate: "",
+aws: "entertainment/movies"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547112718001_All-Cheerleaders-Die--Morning-Hangover---CLIP-HD.mp4",
+EncodingRate: 1776074,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547119198001_All-Cheerleaders-Die--Morning-Hangover---CLIP-HD.mp4",
+EncodingRate: 1204074,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547111865001_All-Cheerleaders-Die--Morning-Hangover---CLIP-HD.mp4",
+EncodingRate: 771997,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547122529001_All-Cheerleaders-Die--Morning-Hangover---CLIP-HD.mp4",
+EncodingRate: 348000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547112692001_All-Cheerleaders-Die--Morning-Hangover---CLIP-HD.mp4",
+EncodingRate: 169281,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3547046520001"
+}
+}
+}
+},
+{
+id: 8850413,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/experience/weekend/food/2014/05/08/8850413/",
+mobileUrl: "http://usat.ly/Rv08r5",
+ssts: {
+section: "experience",
+subsection: "weekend",
+topic: "food",
+subtopic: "",
+storysubject: null,
+leafName: "food",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3499746348001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 12:32:25 PM",
+user: "cshaw",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: "USA Weekend",
+name: "How to clean and de-vein shrimp from The Culinary Institute of America",
+shortdescription: "How to clean and de-vein shrimp from The Culinary Institute of America",
+tags: null,
+thumbnail: "http://www.gannett-cdn.com/-mm-/c54afb0889e81c2d5d482bf1bb74f0e458b067f1/r=500x279/local/-/media/USATODAY/USATODAY/2014/05/08/1399567466000-how-to-devein-shrimp.jpg",
+videostill: "http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+startdate: null,
+enddate: null,
+length: "03:54",
+credit: "Culinary Institute of America",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+imageid: "8850997",
+thumbnailTiny: "http://moc-assets-prod.gannett-cdn.com/-mm-/5f8f2bbf4174c26e2824294cc8a9f71f3963c792/c=432-0-1676-935&r=115x86/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+bcunfilteredtoken: null,
+bcreadtoken: null,
+bcwritetoken: null,
+interactive: "false",
+createdate: "5/8/2014 12:32:24 PM",
+updatedate: "5/8/2014 12:45:44 PM",
+lastpublisheddate: "5/8/2014 12:45:44 PM",
+initialpublishdate: "5/8/2014 12:37:30 PM",
+embargodate: "",
+topic: "experience-weekend,experience-weekend-food,experience-weekend-videos",
+aws: "travel/destinations/experience_weekend"
+},
+crops: {
+1_1: "http://www.gannett-cdn.com/-mm-/408387ad1eda1ac7a7c3e72d7891fb78addbe7e3/c=664-0-1599-935/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+4_3: "http://www.gannett-cdn.com/-mm-/9e0f8fa850dfcccb5444b5b244029c212686625d/c=432-0-1676-935/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+3_4: "http://www.gannett-cdn.com/-mm-/4970beb66f9f96e53098e3f723fe9cf3eee00a43/c=882-0-1582-935/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+16_9: "http://www.gannett-cdn.com/-mm-/81201949550c9692c633c471c9be77a2f86017f9/c=10-0-1666-935/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+9_16: "http://www.gannett-cdn.com/-mm-/ad4b9853e862d2f91ab8a0b2db02200be70d48e3/c=1056-0-1579-935/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg",
+front_thumb: "http://www.gannett-cdn.com/-mm-/b8ffcf127ae8b1dbbd824977515234f48b88a714/c=566-0-1659-935/local/-/media/USATODAY/USATODAY/2014/05/08//1399567466000-how-to-devein-shrimp.jpg"
+},
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/04/29906170001_3499862875001_SHRIMP-5-11-14.mp4",
+EncodingRate: 1770523,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/04/29906170001_3499880501001_SHRIMP-5-11-14.mp4",
+EncodingRate: 1198523,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/04/29906170001_3499876177001_SHRIMP-5-11-14.mp4",
+EncodingRate: 772834,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/04/29906170001_3499881329001_SHRIMP-5-11-14.mp4",
+EncodingRate: 345596,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/04/29906170001_3499872072001_SHRIMP-5-11-14.mp4",
+EncodingRate: 162112,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3499746348001"
+}
+}
+}
+},
+{
+id: 8850755,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/2014/05/08/8850755/",
+mobileUrl: "http://usat.ly/1jkxzHP",
+ssts: {
+section: "news",
+subsection: "",
+topic: null,
+subtopic: null,
+storysubject: null,
+leafName: "news",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546961244001",
+name: "88-year-old man beheaded, wife still missing",
+shortdescription: "Investigators are searching for answers after an 88-year-old man was murdered and his 87-year-old wife is missing from their home. Police say their is no sign of forced entry or a struggle.",
+tags: "wxia,elderly couple attacked,man beheaded in home,National News,Georgia",
+source: "VPC",
+origin: "VPC",
+autoarchive: "true",
+adsenabled: "true",
+startdate: "1/1/0001 12:00:00 AM",
+enddate: "1/1/0001 12:00:00 AM",
+gannetttracking: "VPC_OLD MAN BEHEADED WIFE MISSING-W050814WXIA",
+longdescription: null,
+viraldistribution: "true",
+user: "VTM",
+datecreated: "5/8/2014 12:39:06 PM",
+credit: "VPC",
+propertyid: "1",
+brightcoveaccount: "VPC_OLD MAN BEHEADED WIFE MISSING-W050814WXIA",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547023059001_thumbnail-for-video-3546961244001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3547023064001_video-still-for-video-3546961244001.jpg?pubId=29906170001",
+status: "complete",
+length: "01:08",
+keywords: null,
+interactive: "false",
+createdate: "5/8/2014 12:39:06 PM",
+updatedate: "5/8/2014 12:39:10 PM",
+lastpublisheddate: "5/8/2014 12:39:10 PM",
+initialpublishdate: "5/8/2014 12:39:09 PM",
+embargodate: "",
+aws: "news"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547005192001_usat555b6627-ba27-41a0-8e59-fb3d138abbf3.mp4",
+EncodingRate: 1768000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547005293001_usat555b6627-ba27-41a0-8e59-fb3d138abbf3.mp4",
+EncodingRate: 1196000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547001469001_usat555b6627-ba27-41a0-8e59-fb3d138abbf3.mp4",
+EncodingRate: 723681,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547001515001_usat555b6627-ba27-41a0-8e59-fb3d138abbf3.mp4",
+EncodingRate: 348000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3547001009001_usat555b6627-ba27-41a0-8e59-fb3d138abbf3.mp4",
+EncodingRate: 164114,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546961244001"
+}
+}
+}
+},
+{
+id: 8834945,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/sports/nfl/draft/2014/05/08/8834945/",
+mobileUrl: "http://usat.ly/1jkxAeW",
+ssts: {
+section: "sports",
+subsection: "nfl",
+topic: "draft",
+subtopic: "",
+storysubject: null,
+leafName: "draft",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3545433361001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/7/2014 10:56:17 PM",
+user: "easmith",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: "National Football League,Video Big Board",
+name: "Top NFL prospects discuss strengths and weaknesses",
+shortdescription: "The top NFL prospects are in New York for the 2014 draft, and a some discuss what they bring to the table and the pro players they hope they can compare to.",
+tags: "Football,draft,SMGV,nfl,sports,USA Today Sports,NFL draft 2014,video big board",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3545498502001_Screen-Shot-2014-05-07-at-10-40-23-PM.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3545492545001_Screen-Shot-2014-05-07-at-10-40-23-PM.jpg?pubId=29906170001",
+startdate: null,
+enddate: null,
+length: "01:39",
+credit: "USA TODAY Sports",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/7/2014 10:56:17 PM",
+updatedate: "5/8/2014 12:39:04 PM",
+lastpublisheddate: "5/8/2014 12:39:04 PM",
+initialpublishdate: "5/7/2014 10:59:27 PM",
+embargodate: "",
+aws: "sports/football/nfl"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545649144001_TOP-PICKS-TALK-NFL-DRAFT.mp4",
+EncodingRate: 1799957,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545647130001_TOP-PICKS-TALK-NFL-DRAFT.mp4",
+EncodingRate: 1227957,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545624366001_TOP-PICKS-TALK-NFL-DRAFT.mp4",
+EncodingRate: 763336,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545624384001_TOP-PICKS-TALK-NFL-DRAFT.mp4",
+EncodingRate: 363968,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545635189001_TOP-PICKS-TALK-NFL-DRAFT.mp4",
+EncodingRate: 182995,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3545433361001"
+}
+}
+}
+},
+{
+id: 8849965,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/nation/2014/05/08/8849965/",
+mobileUrl: "http://usat.ly/1jkwhga",
+ssts: {
+section: "news",
+subsection: "nation",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "nation",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546946082001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 12:20:11 PM",
+user: "mwashington",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: "Jodi Arias",
+name: "Journalists discuss Jodi Arias verdict anniversary",
+shortdescription: "Arizona Republic columnist EJ Montini and reporter Richard Ruelas discuss the one year anniversary of the Jodi Arias guilty verdict and what made it the most salacious trial in Arizonaâ€™s history.",
+tags: null,
+thumbnail: "http://download.gannett.edgesuite.net/arizonarepublic/brightcove/29901534001/201405/3600/29901534001_3544455013001_thumbnail-for-video-3544669681001.jpg?pubId=29901534001",
+videostill: "http://download.gannett.edgesuite.net/arizonarepublic/brightcove/29901534001/201405/400/29901534001_3544744985001_video-still-for-video-3544669681001.jpg?pubId=29901534001",
+startdate: null,
+enddate: null,
+length: "01:39",
+credit: "The Arizona Republic",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 12:20:10 PM",
+updatedate: "5/8/2014 12:35:33 PM",
+lastpublisheddate: "5/8/2014 12:35:33 PM",
+initialpublishdate: "5/8/2014 12:34:54 PM",
+embargodate: "",
+aws: "news/national"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp22499.edgefcs.net/ondemand/&mp4:brightcove/29901534001/201405/3136/29901534001_3544731971001_arias-verdict.mp4",
+EncodingRate: 1216000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp22499.edgefcs.net/ondemand/&mp4:brightcove/29901534001/201405/2752/29901534001_3544730563001_arias-verdict.mp4",
+EncodingRate: 1032000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp22499.edgefcs.net/ondemand/&mp4:brightcove/29901534001/201405/3112/29901534001_3544713508001_arias-verdict.mp4",
+EncodingRate: 800043,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp22499.edgefcs.net/ondemand/&mp4:brightcove/29901534001/201405/112/29901534001_3544713521001_arias-verdict.mp4",
+EncodingRate: 508592,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp22499.edgefcs.net/ondemand/&mp4:brightcove/29901534001/201405/3504/29901534001_3544713149001_arias-verdict.mp4",
+EncodingRate: 346592,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp22499.edgefcs.net/ondemand/&mp4:brightcove/29901534001/201405/2632/29901534001_3544721226001_arias-verdict.mp4",
+EncodingRate: 260592,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546946082001"
+}
+}
+}
+},
+{
+id: 8849741,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/usanow/2014/05/08/8849741/",
+mobileUrl: "http://usat.ly/1jkqgA8",
+ssts: {
+section: "news",
+subsection: "usanow",
+topic: "",
+subtopic: "",
+storysubject: null,
+leafName: "usanow",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546936402001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/8/2014 12:12:43 PM",
+user: "krezaei",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: null,
+name: "What city has the most commuters on bikes? | USA NOW",
+shortdescription: "A new Census Bureau survey reveals data about the amount of people who ride bikes to work. USA NOW's Carly Mallenbaum reveals the study's findings. Among them: Biking to work has more than doubled in popularity since 2000.",
+tags: "work,cycle,Carly Mallenbaum,Census Bureau,national,usatfeatured,kaveh rezaei,USANOW,News,USA NOW,USA Today,nation,usat,bicycle,vpcbest,usatoday,bike,commute",
+thumbnail: "http://www.gannett-cdn.com/-mm-/588c3a53f99f922e6ec586b51bd7455cb8e28b9f/r=500x317/local/-/media/USATODAY/USATODAY/2014/05/08/1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+videostill: "http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+startdate: null,
+enddate: null,
+length: "01:31",
+imageid: "8849833",
+thumbnailTiny: "http://moc-assets-prod.gannett-cdn.com/-mm-/a51ae9203a09eb1b8338d1c9e8429b7550195039/c=374-0-3413-2282&r=115x86/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+bcunfilteredtoken: null,
+bcreadtoken: null,
+bcwritetoken: null,
+credit: "(USA TODAY, USA NOW)",
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/8/2014 12:12:43 PM",
+updatedate: "5/8/2014 12:16:07 PM",
+lastpublisheddate: "5/8/2014 12:16:07 PM",
+initialpublishdate: "5/8/2014 12:16:05 PM",
+embargodate: "",
+topic: "news_nation,news_usanow",
+series: "usa-now",
+aws: "news/usanow"
+},
+crops: {
+1_1: "http://www.gannett-cdn.com/-mm-/c58fa765482308846c24eb012ec267bf8dc8b068/c=677-0-2959-2282/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+4_3: "http://www.gannett-cdn.com/-mm-/0b3687a22cde67eb4605b7824b38ff6639438cd9/c=374-0-3413-2282/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+3_4: "http://www.gannett-cdn.com/-mm-/03bde313520f8031bf3ed113bc1b3111973cada6/c=1037-0-2750-2282/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+16_9: "http://www.gannett-cdn.com/-mm-/88fc4ea29003d5a1c49eb36aa85aeecc1eac7eeb/c=0-58-3600-2088/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+9_16: "http://www.gannett-cdn.com/-mm-/0140499dc81eee4f43e2aca3e1b214a0526cad91/c=1188-0-2470-2282/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg",
+front_thumb: "http://www.gannett-cdn.com/-mm-/edd8b08ad9d75e9df7d0e94469beba1472960238/c=569-0-3240-2282/local/-/media/USATODAY/USATODAY/2014/05/08//1399565783000-USL-BIKE-TRAFFIC-08s.jpg"
+},
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546945888001_USA-NOW-0508.mp4",
+EncodingRate: 6922000,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546957086001_USA-NOW-0508.mp4",
+EncodingRate: 1736017,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546961333001_USA-NOW-0508.mp4",
+EncodingRate: 1164017,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546957044001_USA-NOW-0508.mp4",
+EncodingRate: 660563,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546961947001_USA-NOW-0508.mp4",
+EncodingRate: 364017,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546953920001_USA-NOW-0508.mp4",
+EncodingRate: 154603,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546936402001"
+}
+}
+}
+},
+{
+id: 8848749,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.usatoday.com/videos/news/2014/05/08/8848749/",
+mobileUrl: "http://usat.ly/1jkhqSZ",
+ssts: {
+section: "news",
+subsection: "",
+topic: null,
+subtopic: null,
+storysubject: null,
+leafName: "news",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3546716457001",
+name: "BP fighting claims from 2010 Gulf oil spill",
+shortdescription: "BP is fighting against the claims process that some argue were agreed upon by all parties involved and point to court documents to prove it.",
+tags: "new orleans,wwl,BP oil spill,investigative,gulf oil spill,National News",
+source: "VPC",
+origin: "VPC",
+autoarchive: "true",
+adsenabled: "true",
+startdate: "1/1/0001 12:00:00 AM",
+enddate: "1/1/0001 12:00:00 AM",
+gannetttracking: "VPC_BP FIGHTING CLAIMS PROCESS-W050814Gannett",
+longdescription: null,
+viraldistribution: "true",
+user: "VTM",
+datecreated: "5/8/2014 11:49:05 AM",
+credit: "VPC",
+propertyid: "1",
+brightcoveaccount: "VPC_BP FIGHTING CLAIMS PROCESS-W050814Gannett",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3546888073001_thumbnail-for-video-3546716457001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3546888074001_video-still-for-video-3546716457001.jpg?pubId=29906170001",
+status: "complete",
+length: "06:08",
+keywords: null,
+interactive: "false",
+createdate: "5/8/2014 11:49:05 AM",
+updatedate: "5/8/2014 11:49:09 AM",
+lastpublisheddate: "5/8/2014 11:49:09 AM",
+initialpublishdate: "5/8/2014 11:49:08 AM",
+embargodate: "",
+aws: "news"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546886109001_usat84e1376a-91df-4ddc-bb2d-d52be9c424e8.mp4",
+EncodingRate: 1753220,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546891173001_usat84e1376a-91df-4ddc-bb2d-d52be9c424e8.mp4",
+EncodingRate: 1181220,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546879830001_usat84e1376a-91df-4ddc-bb2d-d52be9c424e8.mp4",
+EncodingRate: 749959,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546888364001_usat84e1376a-91df-4ddc-bb2d-d52be9c424e8.mp4",
+EncodingRate: 343176,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3546868582001_usat84e1376a-91df-4ddc-bb2d-d52be9c424e8.mp4",
+EncodingRate: 153652,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3546716457001"
+}
+}
+}
+},
+{
+id: 8825749,
+position: 0,
+type: "video",
+status: "published",
+url: "http://www.jconline.com/videos/tech/columnist/talkingtech/2014/05/08/8825749/",
+mobileUrl: "http://usat.ly/1jkeh5r",
+ssts: {
+section: "tech",
+subsection: "columnist",
+topic: "talkingtech",
+subtopic: "",
+storysubject: null,
+leafName: "talkingtech",
+taxonomyEntityDisplayName: null
+},
+metaData: {
+items: {
+brightcoveid: "3544956069001",
+viraldistribution: "true",
+autoarchive: "true",
+adsenabled: "True",
+status: "complete",
+datecreated: "5/7/2014 6:53:17 PM",
+user: "nblair",
+origin: "1",
+propertyid: "1",
+brightcoveaccount: "29906170001",
+keywords: "Talking Tech",
+name: "This 'smart shirt' monitors heart rate, tension levels",
+shortdescription: "Forget the smart watch, OMsignal's smart shirt monitors your emotional well-being. Everything from your heart-rate, how much you sweat to your emotional state.",
+tags: "technology,mo,jefferson graham,Talking tech,vpctech",
+thumbnail: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3545131107001_th-536ab729e4b0c968f861a52a-1083021587001.jpg?pubId=29906170001",
+videostill: "http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3545131106001_vs-536ab729e4b0c968f861a52a-1083021587001.jpg?pubId=29906170001",
+startdate: null,
+enddate: null,
+length: "01:32",
+credit: null,
+excludemobile: "False",
+excluderightnow: "False",
+majorchange: "False",
+content-protection-state: "free",
+lastaction: "Published",
+interactive: "false",
+createdate: "5/7/2014 6:53:16 PM",
+updatedate: "5/8/2014 12:42:40 PM",
+lastpublisheddate: "5/8/2014 11:43:36 AM",
+initialpublishdate: "5/8/2014 11:01:10 AM",
+embargodate: "",
+aws: "tech"
+},
+crops: null,
+document: null,
+data: {
+video: {
+Renditions: [
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545131104001_usata545af7f-8c37-4835-8e88-c2e59463565c.mp4",
+EncodingRate: 1771529,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545135925001_usata545af7f-8c37-4835-8e88-c2e59463565c.mp4",
+EncodingRate: 1199529,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545131373001_usata545af7f-8c37-4835-8e88-c2e59463565c.mp4",
+EncodingRate: 751161,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545134522001_usata545af7f-8c37-4835-8e88-c2e59463565c.mp4",
+EncodingRate: 344078,
+AudioOnly: false
+},
+{
+Url: "rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/29906170001/2014/05/29906170001_3545131084001_usata545af7f-8c37-4835-8e88-c2e59463565c.mp4",
+EncodingRate: 153858,
+AudioOnly: false
+}
+],
+FlvUrl: "http://c.brightcove.com/services/mobile/streaming/index/master.m3u8?videoId=3544956069001"
+}
+}
+}
+}
+]
+}
+}
+}

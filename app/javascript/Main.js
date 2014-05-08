@@ -36,7 +36,7 @@ Main.onLoad = function () {
     Scene1.load();
     Scene1.show();
     Scene1.focus();
-    Scenes.sceneSwitch(null, Scene1);        
+    // Scenes.sceneSwitch(null, Scene1);        
 
     // Enable key event processing
     Main.enableKeys();

@@ -47,14 +47,13 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     transition: width 1s, height 1s, transform 1s;
 }
 
-.nav#collapsed,
-.nav#index_open {
+.nav#collapsed {
     height: 30px;
     bottom: 0;
 }
 
 .nav#index_open {
-    bottom: 413px;
+    height: 0;
 }
 
 .nav#details {
@@ -154,7 +153,6 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     width: 100%;
     display: none;
 }
-
 
 .index-wrapper > .section-heading {
     margin-left: 65px;
