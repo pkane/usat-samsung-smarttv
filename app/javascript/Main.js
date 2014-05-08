@@ -1,7 +1,7 @@
 var widgetAPI = new Common.API.Widget();
 var tvKey = new Common.API.TVKeyValue();
 // var playerInstance = webapis.avplay;
-var parseTar = 'index_open';
+var parseTar = 'details';
 
 var Main = {
     returnIndex : {
@@ -193,6 +193,7 @@ Main.keyDown = function () {
             if ($.type(parseTar) == "string") {
                 Main.returnIndex.parseString(parseTar);            
             }             
+            Main.selectNav('up');                        
             break;
         case tvKey.KEY_LEFT:
             break;
