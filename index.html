@@ -98,25 +98,10 @@
 					</div>																				
 				</div>
 			</section>
-			<section id="scene1" class="scene">			
+			<section ng-repeat='scene in scenes' id="{{scene.id}}" class="scene">			
 				<!-- <video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video> -->
-				<video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="{{sections.news}}"></video>
-			</section>
-			<section id="scene2" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.sports}}"></video>			
-			</section>
-			<section id="scene3" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.money}}"></video>			
-			</section>
-			<section id="scene4" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.life}}"></video>			
-			</section>		
-			<section id="scene5" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.tech}}"></video>
-			</section>
-			<section id="scene6" class="scene">
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{sections.travel}}"></video>
-			</section>													
+				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{scene.src}}"></video>							
+			</section>												
 		</section>
 	</body>
 </html>
