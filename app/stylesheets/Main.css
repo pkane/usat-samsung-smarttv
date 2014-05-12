@@ -149,7 +149,6 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 .index-wrapper {
     overflow-x: auto;    
     bottom: 30%;    
-    height: 180px;    
     width: 100%;
     display: none;
 }

@@ -163,6 +163,7 @@ Main.switchScene = function() {
     console.log('switchScene');
     var sectionList = $('.section-list'),
         navKeys = sectionList.find('li'),
+        sectionPar = sectionList.parent(),
         curSel = $('.selected'),
         curAct = $('.active'), 
         oldScene,
@@ -170,18 +171,20 @@ Main.switchScene = function() {
         newScene,
         oldAct = navKeys.index(curAct), // Index number of old selected
         newAct = navKeys.index(curSel); // Index number of new selected
-        $(navKeys[oldAct]).removeClass('active'); // Take object at index of old selected and remove the active class
-        $(navKeys[newAct]).addClass('active'); // Take object at index of new selected and add active class   
-        newRel = $(navKeys[newAct]);
-        newData = newRel.data();
-    for (i=0; i<Scenes.elem.length; i++) {
-        if (Scenes.elem[i].elem.css('display') == 'block'){
-            oldScene = Scenes.elem[i];
-        } else if (Scenes.elem[i].elem.selector == newData.rel) {
-            newScene = Scenes.elem[i];
-        }
-    }
-    Scenes.sceneSwitch(oldScene, newScene);    
+        if (sectionPar.is('#expanded')) {
+            $(navKeys[oldAct]).removeClass('active'); // Take object at index of old selected and remove the active class
+            $(navKeys[newAct]).addClass('active'); // Take object at index of new selected and add active class   
+            newRel = $(navKeys[newAct]);
+            newData = newRel.data();
+            for (i=0; i<Scenes.elem.length; i++) {
+                if (Scenes.elem[i].elem.css('display') == 'block'){
+                    oldScene = Scenes.elem[i];
+                } else if (Scenes.elem[i].elem.selector == newData.rel) {
+                    newScene = Scenes.elem[i];
+                }
+            }
+            Scenes.sceneSwitch(oldScene, newScene);  
+        };  
 };
 
 Main.keyDown = function () {
