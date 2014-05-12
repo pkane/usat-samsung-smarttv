@@ -11,14 +11,14 @@ var Main = {
     }
 };
 
-Main.onAVPlayObtained = function(avplay) {
-    Main.AVPlayer = avplay;
-    Main.AVPlayer.init();
-};
+// Main.onAVPlayObtained = function(avplay) {
+//     Main.AVPlayer = avplay;
+//     Main.AVPlayer.init();
+// };
 
-Main.onGetAVPlayError = function() {
-    alert('######onGetAVPlayError:' + error.message);
-};
+// Main.onGetAVPlayError = function() {
+//     alert('######onGetAVPlayError:' + error.message);
+// };
 
 Main.onLoad = function () {
     // playerInstance.getAVPlay(Main.onAVPlayObtained, Main.onGetAVPlayError);    
