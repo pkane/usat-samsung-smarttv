@@ -1,6 +1,6 @@
 var app = angular.module('usatSmartTv',[]);
-var widgetAPI = new Common.API.Widget();
-var tvKey = new Common.API.TVKeyValue();
+// var widgetAPI = new Common.API.Widget();
+// var tvKey = new Common.API.TVKeyValue();
 // var playerInstance = webapis.avplay;
 var parseTar = 'details';
 
@@ -42,7 +42,7 @@ Main.onLoad = function () {
     // Enable key event processing
     Main.enableKeys();
     Main.returnIndex.onLoad();
-    widgetAPI.sendReadyEvent();         
+    // widgetAPI.sendReadyEvent();         
 
     // var timer = window.setTimeout(function (){
     //     nav = $('.nav');

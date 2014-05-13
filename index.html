@@ -4,9 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>USATODAY</title>
 
-		<!-- TODO : Common API -->
+		<!-- TODO : Common API 
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+	-->
 
 		<!-- <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script> -->
 	
@@ -30,7 +31,7 @@
 
 		<!-- TODO: your code here -->		
 
-		<section class="main-view" ng-app="usatSmartTv" ng-controller='mainController'>
+		<section class="main-view" ng-app="usatSmartTv" ng-controller='mainController' data-ng-init="myData.init()">
 			<h1 id="heading"></h1>
 			<!-- Choose your section -->		
 			<section class="absolute nav section-picker anchor" id="expanded">
@@ -101,7 +102,7 @@
 			</section>
 			<section ng-repeat='scene in scenes' id="{{scene.id}}" class="scene">			
 				<!-- <video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video> -->
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{scene.src}}"></video>							
+				<video id="main-video-player" class="main-video-player" preload="metadata" src=""></video>							
 			</section>												
 		</section>
 	</body>
