@@ -43,19 +43,28 @@ app.controller("mainController", function($scope, $http) {
 				url = "http://api.gannett-cdn.com/MobileServices/MArticleService.svc/mcontent/v1/fronts/",
 				fullurl;
 
-		    for (var i = $scope.scenes.length - 1; i >= 0; i--) {
-				fullurl = (url + $scope.scenes[i].name + "_Tablet_Video?siteId=" + key);
-				var j = i;
+			function queryFeed(callback) {
+			    for (var i = $scope.scenes.length - 1; i >= 0; i--) {
+					fullurl = (url + $scope.scenes[i].name + "_Tablet_Video?siteId=" + key);
+					var j = i;
 
-				$.ajax({type: 'GET', url: fullurl, async: true, dataType: 'json', success: function(data){
-							console.log(data);  
-		    				$scope.scenes[j].src = data.modules.Items.content;
+					$.ajax({type: 'GET', url: fullurl, async: true, dataType: 'json', success: function(data){
+								console.log(data);  
+			    				$scope.scenes[j].src = data.modules.Items.content;
 
-				            }, error: function(xhr, ajaxoptions, thrownerror){
-				                alert(xhr.status);
-				                alert(thrownerror);
-				            }});								
-		    };  				
+					            }, error: function(xhr, ajaxoptions, thrownerror){
+					                alert(xhr.status);
+					                alert(thrownerror);
+					            }});								
+			    };  	
+			    callback();			
+			}
+
+			queryFeed(function () {
+				console.log($scope.scenes);
+			});
+
+
 
        //      var responsePromise = $http.get(url);
 
