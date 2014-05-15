@@ -48,14 +48,20 @@ app.controller("mainController", function($scope, $http) {
 					fullurl = (url + $scope.scenes[i].name + "_Tablet_Video?siteId=" + key);
 					var j = i;
 
-					$.ajax({type: 'GET', url: fullurl, async: true, dataType: 'json', success: function(data){
-								console.log(data);  
-			    				$scope.scenes[j].src = data.modules.Items.content;
+					// $.ajax({type: 'GET', url: fullurl, async: true, dataType: 'json', success: function(data){
+					// 			console.log(data);  
+			  //   				$scope.scenes[j].src = data.modules.Items.content;
 
-					            }, error: function(xhr, ajaxoptions, thrownerror){
-					                alert(xhr.status);
-					                alert(thrownerror);
-					            }});								
+					//             }, error: function(xhr, ajaxoptions, thrownerror){
+					//                 alert(xhr.status);
+					//                 alert(thrownerror);
+					//             }});	
+
+					$http.get(fullurl).success(function (data) {
+						$scope.scenes[j].src = data.modules.Items.content;
+					}).error(function () {
+						console.log('unexpected error');
+					});							
 			    };  	
 			    callback();			
 			}
