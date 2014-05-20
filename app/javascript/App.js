@@ -22,12 +22,12 @@ var Main = {
 
 Main.onLoad = function () {
     // playerInstance.getAVPlay(Main.onAVPlayObtained, Main.onGetAVPlayError);    
-    Scene1 = new Scene ($('#scene1'), null );  
-    Scene2 = new Scene ($('#scene2'), null );   
-    Scene3 = new Scene ($('#scene3'), null );  
-    Scene4 = new Scene ($('#scene4'), null );   
-    Scene5 = new Scene ($('#scene5'), null );  
-    Scene6 = new Scene ($('#scene6'), null );        
+    Scene1 = new Scene ($('#scene1'));  
+    Scene2 = new Scene ($('#scene2'));   
+    Scene3 = new Scene ($('#scene3'));  
+    Scene4 = new Scene ($('#scene4'));   
+    Scene5 = new Scene ($('#scene5'));  
+    Scene6 = new Scene ($('#scene6'));        
     Scenes.elem[0] = Scene1;
     Scenes.elem[1] = Scene2;
     Scenes.elem[2] = Scene3;

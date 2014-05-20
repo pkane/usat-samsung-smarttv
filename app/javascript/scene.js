@@ -1,6 +1,7 @@
-Scene = function(elem, handler) {
+Scene = function(elem) {
 	this.elem = elem;
-	this.handler = handler;
+	this.handler;
+	this.scope = {};
 
 	this.init = function (arg) {
 		this.elem = $(arg);
