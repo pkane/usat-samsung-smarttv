@@ -49,10 +49,9 @@ app.controller("mainController", function($scope, $http) {
 				url = "http://api.gannett-cdn.com/MobileServices/MArticleService.svc/mcontent/v1/fronts/",
 				fullurl;
 
-			function parseData(array, iterator) {
-				for (var i = array[iterator].data.length - 1; i >= 0; i--) {
-					array[iterator].src = array[iterator].data[i].metaData.data.video.FlvUrl;
-					console.log(array[iterator].name, array[iterator].src);			
+			function parseData(array, j) {
+				for (var i = array[j].data.length - 1; i >= 0; i--) {
+					array[j].src = array[j].data[i].metaData.data.video.Renditions[0].Url.replace('rtmp://cp17277.edgefcs.net/ondemand/&mp4:Brightcove/Brightcove2/', 'http://videos.usatoday.net/Brightcove2/');
 				}; 
 			};				
 
@@ -69,7 +68,7 @@ app.controller("mainController", function($scope, $http) {
 						$scope.$apply(function() {
 							parseData($scope.scenes, i);
 						});  								
-						console.log($scope.scenes)
+						// console.log($scope.scenes[i])
 			            }, error: function(xhr, ajaxoptions, thrownerror){
 			                alert(xhr.status);
 			                alert(thrownerror);
