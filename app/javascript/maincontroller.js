@@ -1,4 +1,7 @@
-var sceneScope = [];
+var sceneScope = [],
+	activeScene = {},
+	prevScene = {},
+	nextScene = {};
 
 app.controller("mainController", function($scope, $http) {
         $scope.myData = {};
@@ -96,15 +99,26 @@ app.controller("mainController", function($scope, $http) {
 				fullurl = (url + $scope.scenes[i].name + "_Tablet_Video?siteId=" + key);
 				queryFeed(i);			
 				sceneScope.push($scope.scenes[i].playlist);
+				if ($scope.scenes[i].state == 'active') {
+					activeScene = $scope.scenes[i];
+					prevScene = $scope.scenes[i-1];
+					nextScene = $scope.scenes[i+1];					
+				};
 			}
 
 			console.log($scope.scenes);			
-			return 
         };          
         $scope.myData.prevVideo = function(item, event) {
+			var curScene = activeScene;
+        	$('#'+curScene.id).find('video').pause();
+			$scope.scenes.indexOf(curScene).state='inactive';
+        	$scope.scenes.indexOf(curScene-1).state='active';
+			activeScene = $scope.scenes.indexOf(curScene-1);        	
+        	$('#'+activeScene.id).find('video').play();
 
         };
         $scope.myData.nextVideo = function(item, event) {
+        	$(activeScene.id).find('video').pause();        	
 
         };        
 	} );
