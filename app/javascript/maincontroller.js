@@ -1,3 +1,5 @@
+var sceneScope = [];
+
 app.controller("mainController", function($scope, $http) {
         $scope.myData = {};
 		$scope.scenes = [
@@ -6,7 +8,8 @@ app.controller("mainController", function($scope, $http) {
 				name : 'news',
 				data : [],
 				playlist : [],
-				src : []
+				src : [],
+				state : 'active'
 				// src : 'http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4'
 			},
 			scene2 = {
@@ -14,7 +17,8 @@ app.controller("mainController", function($scope, $http) {
 				name : 'sports',
 				data : [],
 				playlist : [],
-				src : []
+				src : [],
+				state : 'inactive'
 				// src : 'http://videos.usatoday.net/Brightcove2/29906170001/2014/03/29906170001_3396802596001_Memphis-Regional-Preview.mp4'
 			},
 			scene3 = {
@@ -22,7 +26,8 @@ app.controller("mainController", function($scope, $http) {
 				name : 'money',
 				data : [],
 				playlist : [],
-				src : []
+				src : [],
+				state : 'inactive'
 				// src : 'http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530516356001_usat86ee36cf-a4c8-42ef-ad2b-eb04736edb3e.mp4'
 			},
 			scene4 = {
@@ -30,7 +35,8 @@ app.controller("mainController", function($scope, $http) {
 				name : 'life',
 				data : [],
 				playlist : [],
-				src : []
+				src : [],
+				state : 'inactive'
 				// src : 'http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530582491001_usat6860fe58-4d44-4310-9431-2e90976f53cf.mp4'	
 			},
 			scene5 = {		
@@ -38,7 +44,8 @@ app.controller("mainController", function($scope, $http) {
 				name : 'tech',
 				data : [],
 				playlist : [],
-				src : []
+				src : [],
+				state : 'inactive'
 				// src : 'http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530293413001_usat2b542485-3ca0-4e86-9bf7-101dd6430608.mp4',
 			},
 			scene6 = {
@@ -46,7 +53,8 @@ app.controller("mainController", function($scope, $http) {
 				name : 'travel',
 				data : [],
 				playlist : [],
-				src : []
+				src : [],
+				state : 'inactive'
 				// src : 'http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3529185858001_ProcamsD6141-Strategies-for-Preventing-Skin-Cancer.mp4'
 			}
 		];           
@@ -86,14 +94,17 @@ app.controller("mainController", function($scope, $http) {
 
 		    for (var i = $scope.scenes.length - 1; i >= 0; i--) {
 				fullurl = (url + $scope.scenes[i].name + "_Tablet_Video?siteId=" + key);
-				queryFeed(i);
-				// Global scene object - let's bind the 
-				// scope scene object with playlist 
-				// to the scenes we constructed globally				
-				// Scenes.elem[i].scope = $scope.scenes[i];				
+				queryFeed(i);			
+				sceneScope.push($scope.scenes[i].playlist);
 			}
 
-			console.log(Scenes);			
-
+			console.log($scope.scenes);			
+			return 
         };          
+        $scope.myData.prevVideo = function(item, event) {
+
+        };
+        $scope.myData.nextVideo = function(item, event) {
+
+        };        
 	} );

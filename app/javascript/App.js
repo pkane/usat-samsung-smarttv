@@ -8,7 +8,10 @@ var Main = {
     returnIndex : {
         elem : $('.return-index'),
         anchor : $('.return-index-anchor')
-    }
+    },
+    Scenes : {
+        elem : new Array()
+    }    
 };
 
 // Main.onAVPlayObtained = function(avplay) {
@@ -37,6 +40,7 @@ Main.onLoad = function () {
     Scene1.load();
     Scene1.show();
     Scene1.focus();
+    Main.scopeMatch();
     // Scenes.sceneSwitch(null, Scene1);        
 
     // Enable key event processing
@@ -131,6 +135,15 @@ Main.selectNav = function(arg1) {
             break;            
     }
 
+};
+
+Main.scopeMatch = function() {
+    // Global scene object - let's bind the 
+    // scope scene object with playlist 
+    // to the scenes we constructed globally               
+    for (var i = sceneScope.length - 1; i >= 0; i--) {
+        Scenes.elem[i].scope = sceneScope[i];                
+    }
 };
 
 Main.selectDetails = function(direction) {
