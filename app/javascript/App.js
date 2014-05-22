@@ -200,6 +200,10 @@ Main.switchScene = function() {
         };  
 };
 
+Main.playVideo = function(object) {
+    console.log('video play');
+};
+
 Main.keyDown = function () {
     var keyCode = event.keyCode;
 

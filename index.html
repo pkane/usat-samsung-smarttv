@@ -69,12 +69,12 @@
 					<p class="details-caption">We dock at Grand Cayman on a Norwegian charter and find fresh local fish, locally brewed beer and popular chains within walking distance.</p>
 				</section>
 			</section>	
-			<section class="absolute index-wrapper">
+			<section class="absolute index-wrapper" style="display:block">
 				<a href="javascript:void(0);" class="anchor return-index" onkeyDown="Main.keyDown();"></a>				
 				<h3 class="section-heading futuratodaylight">Choose Section</h3>					
 				<div class="section-index">
 					<!-- Chosen section video items -->
-					<div class="video-item prev-item" ng-click="myData.prevVideo()">
+					<div class="video-item prev-item" ng-click="myData.nextPrevVideo(-1)">
 						<img class="thumbnail" src="http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/18//1397833343000-Capture.JPG" />
 						<p class="video-caption">Lorem ipsum sin dolor sect nonummy text sin ipsum.</p>
 					</div>
@@ -82,7 +82,7 @@
 						<img class="thumbnail" src="http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/18//1397833343000-Capture.JPG" />
 						<p class="video-caption">Lorem ipsum sin dolor sect nonummy text sin ipsum.</p>
 					</div>
-					<div class="video-item next-item" ng-click="myData.nextVideo()">
+					<div class="video-item next-item" ng-click="myData.nextPrevVideo(1)">
 						<img class="thumbnail" src="http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/18//1397833343000-Capture.JPG" />
 						<p class="video-caption">Lorem ipsum sin dolor sect nonummy text sin ipsum.</p>
 					</div>
@@ -102,7 +102,7 @@
 			</section>
 			<section ng-repeat='scene in scenes' id="{{scene.id}}" class="scene">			
 				<!-- <video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video> -->
-				<video id="main-video-player" class="main-video-player" preload="metadata" src="{{scene.src}}"></video>							
+				<video id="main-video-player" class="main-video-player {{scene.state}}" preload="metadata" src="{{scene.src}}"></video>							
 			</section>												
 		</section>
 	</body>

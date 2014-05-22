@@ -32,6 +32,14 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     display: none;
 }
 
+.main-video-player.active {
+    display: block;
+}
+
+.main-video-player.inactive {
+    display: none;
+}
+
 .absolute {
     position: absolute;
 }
