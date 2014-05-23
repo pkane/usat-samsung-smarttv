@@ -109,9 +109,14 @@ app.controller("mainController", function($scope, $http) {
 
 	    	if (newVid) {
 				curVidObj.pause();
-				curVidObj.src = newVid;
-				activeScene.src = newVid;
-				curVidObj.play();  	    		
+				function myFunc(callback) {
+					curVidObj.src = newVid;
+					activeScene.src = newVid;
+					callback();
+				}
+				myFunc(function (){
+					curVidObj.play();  	    		
+				});
 	    	};        
         };
 
