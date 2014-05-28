@@ -117,17 +117,17 @@ app.controller("mainController", function($scope, $http) {
 				newSrc = activeScene.playlist[newVid],
 	    		// newVid = curScene.playlist[curScene.playlist.indexOf(curScene.src)+dir],
 	    		vidObj = $('#'+activeScene.id).find('video')[0];
-
-	    	if (newSrc) {
-				// curVidObj.pause();
-				function myFunc(callback) {
+				function changeSrc(callback) {
 					vidObj.src = newSrc;
 					activeScene.curVid = newVid;
 					activeScene.src = newSrc;
 					callback();
-				}
-				myFunc(function (){
-					vidObj.play();  	  
+				}	    		
+
+	    	if (newSrc) {
+				vidObj.pause();
+				changeSrc(function (){
+					vidObj.play();  	  										
 					console.log('play');
 				});
 	    	};        
