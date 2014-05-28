@@ -197,6 +197,7 @@ Main.switchScene = function() {
                 }
             }
             Scenes.sceneSwitch(oldScene, newScene);  
+            app.myData.initScene();
         };  
 };
 

@@ -11,6 +11,7 @@ app.controller("mainController", function($scope, $http) {
 				name : 'news',
 				data : [],
 				playlist : [],
+				curVid : 0,
 				src : [],
 				state : 'active'
 			},
@@ -19,6 +20,7 @@ app.controller("mainController", function($scope, $http) {
 				name : 'sports',
 				data : [],
 				playlist : [],
+				curVid : 0,
 				src : [],
 				state : 'inactive'
 			},
@@ -27,6 +29,7 @@ app.controller("mainController", function($scope, $http) {
 				name : 'money',
 				data : [],
 				playlist : [],
+				curVid : 0,
 				src : [],
 				state : 'inactive'
 			},
@@ -35,6 +38,7 @@ app.controller("mainController", function($scope, $http) {
 				name : 'life',
 				data : [],
 				playlist : [],
+				curVid : 0,
 				src : [],
 				state : 'inactive'
 			},
@@ -43,6 +47,7 @@ app.controller("mainController", function($scope, $http) {
 				name : 'tech',
 				data : [],
 				playlist : [],
+				curVid : 0,
 				src : [],
 				state : 'inactive'
 			},
@@ -51,6 +56,7 @@ app.controller("mainController", function($scope, $http) {
 				name : 'travel',
 				data : [],
 				playlist : [],
+				curVid : 0,
 				src : [],
 				state : 'inactive'
 			}
@@ -101,21 +107,28 @@ app.controller("mainController", function($scope, $http) {
 
 			console.log($scope.scenes);			
         };          
-        $scope.myData.nextPrevVideo = function(dir) {
-			var curScene = activeScene,
-				curVid = curScene.src,
-	    		newVid = curScene.playlist[curScene.playlist.indexOf(curVid)+dir],
-	    		curVidObj = $('#'+curScene.id).find('video')[0];
 
-	    	if (newVid) {
-				curVidObj.pause();
+        $scope.myData.initScene = function() {
+
+        };
+
+        $scope.myData.nextPrevVideo = function(dir) {
+				var newVid = (activeScene.curVid+dir),
+				newSrc = activeScene.playlist[newVid],
+	    		// newVid = curScene.playlist[curScene.playlist.indexOf(curScene.src)+dir],
+	    		vidObj = $('#'+activeScene.id).find('video')[0];
+
+	    	if (newSrc) {
+				// curVidObj.pause();
 				function myFunc(callback) {
-					curVidObj.src = newVid;
-					activeScene.src = newVid;
+					vidObj.src = newSrc;
+					activeScene.curVid = newVid;
+					activeScene.src = newSrc;
 					callback();
 				}
 				myFunc(function (){
-					curVidObj.play();  	    		
+					vidObj.play();  	  
+					console.log('play');
 				});
 	    	};        
         };
