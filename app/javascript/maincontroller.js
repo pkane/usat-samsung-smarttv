@@ -121,6 +121,7 @@ app.controller("mainController", function($scope, $http) {
 					vidObj.src = newSrc;
 					activeScene.curVid = newVid;
 					activeScene.src = newSrc;
+					$scope.$apply();
 					callback();
 				}	    		
 
