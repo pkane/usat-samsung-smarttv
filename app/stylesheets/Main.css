@@ -5,13 +5,7 @@
 	border: 0;
 }
 
-/* Layout */
-body
-{
-	width: 1280px;
-	height: 720px;
-    position: relative;
-}
+/* Fonts */
 
 @font-face{
 font-family: FuturaToday;
@@ -27,6 +21,17 @@ src: url(../assets/fonts/FuturaTodayBold.otf);
 font-family: FuturaTodayLight;
 src: url(../assets/fonts/FuturaTodayLight.otf);
 }
+
+/* Layout */
+
+body
+{
+    width: 1280px;
+    height: 720px;
+    position: relative;
+}
+
+/* Main items */
 
 .scene {
     display: none;
@@ -44,143 +49,49 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
     position: absolute;
 }
 
-.nav {
-    bottom: 0;
-    width: 300px;
-    height: 390px;
-    background: #000;
-    left: 5%;    
-    z-index: 1;
-    -webkit-transition: width 1s, height 1s,-webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
-    transition: width 1s, height 1s, transform 1s;
-}
-
-.nav#collapsed {
-    height: 30px;
-    bottom: 0;
-}
-
-.nav#index_open {
-    height: 0;
-}
-
-.nav#details {
-    width: 1216px;
-    height: 120px;
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.section-picker#collapsed > ul,
-.section-picker#details > ul,
-.section-picker#index_open > ul,
-.section-picker#collapsed > .section-heading,
-.section-picker#index_open > .section-heading,
-.logo-size,
-.video-details  {
-    display: none;
-}
-
-.section-picker#collapsed > .logo-size,
-.section-picker#details > .video-details {
-    display: block;
-}
-
-.section-list {
-    font-size: 20px;
-    font-family: futura;
-    list-style: none;
-    padding: 0;
-    color: #FFF;
-}
-
-.section-list > li {
-    padding: 10px 0 10px 30px;    
-    position: relative;
-}
-
-.section-list > li a {
-    display: block;
-    color: white;
-    text-decoration: none;
-}
-
-.section-list > li.selected:after {
-    background: url('../assets/images/icon-sprite.png') no-repeat;
-    display: block;
-    content: '';
-    width: 18px;
-    height: 28px;
-    position: absolute;
-    right: 20px;
-    bottom: 10px;
-}
-
-.section-list > li.return-index {
-    font-size: 12px;
-    text-transform: none;
-    right: 0;
-    position: absolute;
-    top: -40px;
-}
-
-.section-heading {
-    position: relative;
-    display: inline-block;
-    font-size: 22px;
-    color: #CCC;
-    padding: 10px 0 10px 20px;
-    width: 300px;
-    background: #000;
-}
-
-.video-details {
-    color: #FFF;
-    bottom: 26px;
-    position: relative;
-    padding: 0 30px;
-}
-
-.video-details > .logo-size {
-    width: 175px;
-    height: 75px;
-    float: left;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0;
-}
-
-#details > .section-heading {
-    bottom: 47px;
-}
+/* Playlist */
 
 .index-wrapper {
     overflow-x: auto;    
-    bottom: 30%;    
+    bottom: 50px;    
     width: 100%;
-    display: none;
+    /*display: none;*/
 }
 
 .index-wrapper > .section-heading {
-    margin-left: 65px;
+margin: 40px 80px;
+font: 56px futuratodaylight;
+color: #FFF;
 }
 
 .section-index { 
     height: 180px;
     width: 9999px;
-    background: #F3F3F3;
 }
 
 .video-item {
-    width: 220px;
-    height: 160px;
-    padding: 10px;
-    float: left;  
+width: 240px;
+height: 135px;
+float: left;
+margin: 0 17px;
+}
+
+.video-item:first-child {
+margin-left: 80px;
+}
+
+.video-item.active-item:before {
+    display: block;
+    content: 'Now Playing';
+    position: absolute;
+    margin-top: -30px;
+    font: 12px futuratodaylight;
+    color: #FFF;
 }
 
 .video-caption {
-    font: 15px helvetica, sans-serif;
-    color: #333;  
+font: 15px/18px futuratodaylight, sans-serif;
+color: #FFF;
 }
 
 .details-caption {
@@ -198,27 +109,8 @@ src: url(../assets/fonts/FuturaTodayLight.otf);
 }
 
 .thumbnail {
-    width: 220px;
-    height: 124px;    
-}
-
-/* Fonts */
-.futuratoday {
-    font-family: 'FuturaToday';
-    text-transform: uppercase;
-}
-.futuratodaybold {
-    font-family: 'FuturaTodayBold';    
-    text-transform: uppercase;
-}
-.futuratodaylight {
-    font-family: 'FuturaTodayLight';
-    text-transform: uppercase;
-}
-.pragroman {
-    font-family: 'PragRoman';
-    margin: 45px 0 6px;
-    text-transform: uppercase;
+width: 100%;
+height: 100%;  
 }
 
 /* Logos */
@@ -243,9 +135,12 @@ video {
 	height: 91px;
 }
 .logo-main {
-    width: 140px;
-    height: 23px;    
-    background-image: url(../../app/assets/logos/logo-main.png);
+width: 154px;
+height: 25px;
+top: 45px;
+background-image: url(../../app/assets/logos/logo-main.png);
+left: 80px;
+margin: 0;
 }
 .logo-main.wide {
     background-image: url(../assets/images/logos/logo-main-wide.png);
@@ -296,4 +191,19 @@ video {
 }
 .opinion.active {
     background-color: #666;
+}
+
+/* Gradients */
+
+#scene1.index-open > .main-video-player.active:after {
+z-index: 2;
+content: '';
+display: block;
+background: -moz-linear-gradient(top,  rgba(0,155,255,0.7) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,155,255,0.7)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(0,155,255,0.7) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(0,155,255,0.7) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(0,155,255,0.7) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(0,155,255,0.7) 0%,rgba(125,185,232,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3009bff', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }

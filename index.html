@@ -36,8 +36,7 @@
 			<!-- Choose your section -->		
 			<section class="absolute nav section-picker anchor" id="expanded">
 				<a href="javascript:void(0);" class="anchor main-anchor" onkeydown="Main.keyDown();"></a>							
-				<h3 class="section-heading futuratodaylight">Choose Section</h3>
-				<div class="logo-size logo-main wide"></div>
+				<div class="absolute logo-size logo-main wide"></div>
 				<ul class="section-list">
 					<li class="futuratoday return-index" data-rel="return">
 						<a href="javascript:void(0);" class="anchor">return</a>
@@ -71,7 +70,7 @@
 			</section>	
 			<section class="absolute index-wrapper">
 				<a href="javascript:void(0);" class="anchor return-index" onkeyDown="Main.keyDown();"></a>				
-				<h3 class="section-heading futuratodaylight">Choose Section</h3>					
+				<h3 class="section-heading futuratodaylight" ng-option="for scene in scene">News</h3>
 				<div class="section-index">
 					<!-- Chosen section video items -->
 					<div class="video-item prev-item" ng-click="myData.nextPrevVideo(-1)">
@@ -100,7 +99,7 @@
 					</div>																				
 				</div>
 			</section>
-			<section ng-repeat='scene in scenes' id="{{scene.id}}" class="scene">			
+			<section ng-repeat='scene in scenes' id="{{scene.id}}" class="scene index-open">			
 				<!-- <video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video> -->
 				<video id="main-video-player" class="main-video-player {{scene.state}}" preload="metadata" src="{{scene.src}}"></video>							
 			</section>												

@@ -1,0 +1,188 @@
+.main-video-player.active {
+    display: block;
+}
+
+.main-video-player.inactive {
+    display: none;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.nav {
+    bottom: 0;
+    width: 300px;
+    height: 390px;
+    background: #000;
+    left: 5%;    
+    z-index: 1;
+    -webkit-transition: width 1s, height 1s,-webkit-transform 1s;  /* For Safari 3.1 to 6.0 */
+    transition: width 1s, height 1s, transform 1s;
+}
+
+.nav#collapsed {
+    height: 30px;
+    bottom: 0;
+}
+
+.nav#index_open {
+    height: 0;
+}
+
+.nav#details {
+    width: 1216px;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.section-picker#collapsed > ul,
+.section-picker#details > ul,
+.section-picker#index_open > ul,
+.section-picker#collapsed > .section-heading,
+.section-picker#index_open > .section-heading,
+.logo-size,
+.video-details  {
+    display: none;
+}
+
+.section-picker#collapsed > .logo-size,
+.section-picker#details > .video-details {
+    display: block;
+}
+
+.section-list {
+    font-size: 20px;
+    font-family: futura;
+    list-style: none;
+    padding: 0;
+    color: #FFF;
+}
+
+.section-list > li {
+    padding: 10px 0 10px 30px;    
+    position: relative;
+}
+
+.section-list > li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.section-list > li.selected:after {
+    background: url('../assets/images/icon-sprite.png') no-repeat;
+    display: block;
+    content: '';
+    width: 18px;
+    height: 28px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.section-list > li.return-index {
+    font-size: 12px;
+    text-transform: none;
+    right: 0;
+    position: absolute;
+    top: -40px;
+}
+
+.section-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 22px;
+    color: #CCC;
+    padding: 10px 0 10px 20px;
+    width: 300px;
+    background: #000;
+}
+
+.video-details {
+    color: #FFF;
+    bottom: 26px;
+    position: relative;
+    padding: 0 30px;
+}
+
+.video-details > .logo-size {
+    width: 175px;
+    height: 75px;
+    float: left;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+#details > .section-heading {
+    bottom: 47px;
+}
+
+.index-wrapper {
+    overflow-x: auto;    
+    bottom: 30%;    
+    width: 100%;
+    display: none;
+}
+
+.index-wrapper > .section-heading {
+    margin-left: 65px;
+}
+
+.section-index { 
+    height: 180px;
+    width: 9999px;
+    background: #F3F3F3;
+}
+
+.video-item {
+    width: 220px;
+    height: 160px;
+    padding: 10px;
+    float: left;  
+}
+
+.video-caption {
+    font: 15px helvetica, sans-serif;
+    color: #333;  
+}
+
+.details-caption {
+    font: 20px helvetica, sans-serif;
+    margin-top: 10px;
+}
+
+.details-label {
+    font: 15px helvetica, sans-serif;
+    display: inline-block;
+}
+
+.details-label.right {
+    float: right;
+}
+
+.thumbnail {
+    width: 220px;
+    height: 124px;    
+}
+
+/* Fonts */
+.futuratoday {
+    font-family: 'FuturaToday';
+    text-transform: uppercase;
+}
+.futuratodaybold {
+    font-family: 'FuturaTodayBold';    
+    text-transform: uppercase;
+}
+.futuratodaylight {
+    font-family: 'FuturaTodayLight';
+    text-transform: uppercase;
+}
+.pragroman {
+    font-family: 'PragRoman';
+    margin: 45px 0 6px;
+    text-transform: uppercase;
+}
