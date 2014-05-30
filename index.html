@@ -68,12 +68,12 @@
 					<p class="details-caption">We dock at Grand Cayman on a Norwegian charter and find fresh local fish, locally brewed beer and popular chains within walking distance.</p>
 				</section>
 			</section>	
+			<h3 class="section-heading futuratodaylight" >News</h3>			
 			<section class="absolute index-wrapper">
 				<a href="javascript:void(0);" class="anchor return-index" onkeyDown="Main.keyDown();"></a>				
-				<h3 class="section-heading futuratodaylight" ng-option="for scene in scene">News</h3>
-				<div class="section-index">
+				<div class="section-index" ng-controller='eventController'>
 					<!-- Chosen section video items -->
-					<div class="video-item prev-item" ng-click="myData.nextPrevVideo(-1)">
+					<div class="video-item prev-item" ng-click="nextPrevVideo(-1, $event)">
 						<img class="thumbnail" src="http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/18//1397833343000-Capture.JPG" />
 						<p class="video-caption">Lorem ipsum sin dolor sect nonummy text sin ipsum.</p>
 					</div>
@@ -81,7 +81,7 @@
 						<img class="thumbnail" src="http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/18//1397833343000-Capture.JPG" />
 						<p class="video-caption">Lorem ipsum sin dolor sect nonummy text sin ipsum.</p>
 					</div>
-					<div class="video-item next-item" ng-click="myData.nextPrevVideo(1)">
+					<div class="video-item next-item" ng-click="nextPrevVideo(1)">
 						<img class="thumbnail" src="http://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/18//1397833343000-Capture.JPG" />
 						<p class="video-caption">Lorem ipsum sin dolor sect nonummy text sin ipsum.</p>
 					</div>

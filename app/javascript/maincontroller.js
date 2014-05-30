@@ -107,31 +107,33 @@ app.controller("mainController", function($scope, $http) {
 
 			console.log($scope.scenes);			
         };          
+});
 
-        $scope.myData.initScene = function() {
+app.controller('eventController', ['$scope', function($scope) {	
+    $scope.nextPrevVideo = function(dir, event) {
 
-        };
+		var newVid = (activeScene.curVid+dir),
+			indexWrap = $('.index-wrapper'),
+			indexWrap = indexWrap.find('.section-index'),
+			target = event.target(),
+			newSrc = activeScene.playlist[newVid],
+			// newVid = curScene.playlist[curScene.playlist.indexOf(curScene.src)+dir],
+			vidObj = $('#'+activeScene.id).find('video')[0];
 
-        $scope.myData.nextPrevVideo = function(dir) {
-				var newVid = (activeScene.curVid+dir),
-				newSrc = activeScene.playlist[newVid],
-	    		// newVid = curScene.playlist[curScene.playlist.indexOf(curScene.src)+dir],
-	    		vidObj = $('#'+activeScene.id).find('video')[0];
-				function changeSrc(callback) {
-					vidObj.src = newSrc;
-					activeScene.curVid = newVid;
-					activeScene.src = newSrc;
-					$scope.$apply();
-					callback();
-				}	    		
+		function changeSrc(callback) {
+			vidObj.src = newSrc;
+			activeScene.curVid = newVid;
+			activeScene.src = newSrc;
+			$scope.$apply();
+			callback();
+		}	    		
 
-	    	if (newSrc) {
-				vidObj.pause();
-				changeSrc(function (){
-					vidObj.play();  	  										
-					console.log('play');
-				});
-	    	};        
-        };
-
-	} );
+    	if (newSrc) {
+			vidObj.pause();
+			changeSrc(function (){
+				vidObj.play();  	  										
+				console.log('play');
+			});
+    	};        
+    };
+}]);
