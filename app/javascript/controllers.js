@@ -1,9 +1,11 @@
-var sceneScope = [],
-	activeScene = {},
-	prevScene = {},
-	nextScene = {};
+angular.module('usatSmartTv.controllers', [])
 
-app.controller("mainController", function($scope, $http) {
+// var sceneScope = [],
+// 	activeScene = {},
+// 	prevScene = {},
+// 	nextScene = {};
+
+	.controller("AppCtrl", function($scope, $http) {
         $scope.myData = {};
 		$scope.scenes = [
 			scene1 = {

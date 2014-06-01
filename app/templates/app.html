@@ -1,0 +1,15 @@
+<!-- TODO: your code here -->		
+<section class="main-view" ng-controller='AppCtrl' data-ng-init="myData.init()">
+	<h1 id="heading"></h1>
+	<!-- Choose your section 		
+		section-picker.html
+	-->
+	<h3 class="section-heading futuratodaylight" >News</h3>			
+	<!-- Video playlist
+		playlist-html
+	-->
+	<section ng-repeat='scene in scenes' id="{{scene.id}}" class="scene index-open">			
+		<!-- <video id="main-video-player" class="main-video-player" preload="metadata" autoplay="autoplay" src="http://videos.usatoday.net/Brightcove2/29906170001/2014/05/29906170001_3530474700001_usatb5a79027-b22d-43df-84ee-72203c0d6492.mp4"></video> -->
+		<video id="main-video-player" class="main-video-player {{scene.state}}" preload="metadata" src="{{scene.src}}"></video>
+	</section>												
+</section>
