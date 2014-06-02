@@ -4,9 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>USATODAY</title>
 
-		<!-- TODO : Common API -->
+		<!-- TODO : Common API 
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
 		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+	-->
 
 		<!-- <script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script> -->
 	
@@ -15,9 +16,7 @@
 
 		<!-- TODO : Javascript code -->
 		<script language="javascript" type="text/javascript" src="app/javascript/App.js"></script>
-		<script language="javascript" type="text/javascript" src="app/javascript/mainmodel.js"></script>			
 		<script language="javascript" type="text/javascript" src="app/javascript/Controllers.js"></script>		
-		<script language="javascript" type="text/javascript" src="app/javascript/scene.js"></script>
 
 		<!-- TODO : Style sheets code -->
 		<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">
@@ -26,6 +25,8 @@
 
 	</head>
 
-	<body ng-app="usatSmartTv" ></body>
+	<body ng-app="usatSmartTv" >
+		<div ng-view></div>
+	</body>
 
 </html>

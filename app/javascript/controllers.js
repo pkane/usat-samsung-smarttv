@@ -1,12 +1,45 @@
 angular.module('usatSmartTv.controllers', [])
 
-// var sceneScope = [],
-// 	activeScene = {},
-// 	prevScene = {},
-// 	nextScene = {};
-
 	.controller("AppCtrl", function($scope, $http) {
+
+		var sceneScope = [],
+			activeScene = {},
+			prevScene = {},
+			nextScene = {};	
+				
         $scope.myData = {};
+        $scope.scene = function(elem) {
+			this.elem = elem;
+			this.handler;
+			this.init = function (arg) {
+				this.elem = $(arg);
+				this.handler = this.elem.find('video');
+			};
+			this.show = function() {
+				this.elem.show();
+			};
+			this.hide = function() {
+				this.elem.hide();
+			};
+			this.focus = function() {
+				this.handler.focus();
+			};
+			this.load = function() {
+				this.init(this.elem);		
+				this.playVid();
+			};
+			this.unload = function() {
+				this.hide();
+				this.pauseVid();		
+			};
+			this.playVid = function() {
+				this.handler[0].play();
+				console.log('play vid');
+			};
+			this.pauseVid = function() {
+				this.handler[0].pause();
+			};
+        };
 		$scope.scenes = [
 			scene1 = {
 				id : 'scene1',
@@ -15,6 +48,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
+				obj : new $scope.scene($(this.id)),
 				state : 'active'
 			},
 			scene2 = {
@@ -24,6 +58,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
+				obj : new $scope.scene($(this.id)),
 				state : 'inactive'
 			},
 			scene3 = {
@@ -33,6 +68,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
+				obj : new $scope.scene($(this.id)),
 				state : 'inactive'
 			},
 			scene4 = {
@@ -42,6 +78,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
+				obj : new $scope.scene($(this.id)),
 				state : 'inactive'
 			},
 			scene5 = {		
@@ -51,6 +88,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
+				obj : new $scope.scene($(this.id)),
 				state : 'inactive'
 			},
 			scene6 = {
@@ -60,6 +98,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
+				obj : new $scope.scene($(this.id)),
 				state : 'inactive'
 			}
 		];           
@@ -67,11 +106,6 @@ angular.module('usatSmartTv.controllers', [])
         	var key = '1&api_key=zvmv2v9psky7xxhs6sxu825z',
 				url = "http://api.gannett-cdn.com/MobileServices/MArticleService.svc/mcontent/v1/fronts/",
 				fullurl;
-
-		    // Event listener for 
-		    $(activeScene).bind("DOMSubtreeModified", function() {
-		        Main.playVideo(activeScene);
-		    });    
 
 			function parseData(array, j) {
 				for (var i = array[j].data.length - 1; i >= 0; i--) {
@@ -109,33 +143,32 @@ angular.module('usatSmartTv.controllers', [])
 
 			console.log($scope.scenes);			
         };          
-});
+	})
 
-app.controller('eventController', ['$scope', function($scope) {	
-    $scope.nextPrevVideo = function(dir, event) {
+	.controller('eventController', '$scope', function($scope) {	
+    	function nextPrevVideo(dir, event) {
+			var newVid = (activeScene.curVid+dir),
+				indexWrap = $('.index-wrapper'),
+				indexWrap = indexWrap.find('.section-index'),
+				target = event.target(),
+				newSrc = activeScene.playlist[newVid],
+				// newVid = curScene.playlist[curScene.playlist.indexOf(curScene.src)+dir],
+				vidObj = $('#'+activeScene.id).find('video')[0];
 
-		var newVid = (activeScene.curVid+dir),
-			indexWrap = $('.index-wrapper'),
-			indexWrap = indexWrap.find('.section-index'),
-			target = event.target(),
-			newSrc = activeScene.playlist[newVid],
-			// newVid = curScene.playlist[curScene.playlist.indexOf(curScene.src)+dir],
-			vidObj = $('#'+activeScene.id).find('video')[0];
+			function changeSrc(callback) {
+				vidObj.src = newSrc;
+				activeScene.curVid = newVid;
+				activeScene.src = newSrc;
+				$scope.$apply();
+				callback();
+			};	    		
 
-		function changeSrc(callback) {
-			vidObj.src = newSrc;
-			activeScene.curVid = newVid;
-			activeScene.src = newSrc;
-			$scope.$apply();
-			callback();
-		}	    		
-
-    	if (newSrc) {
-			vidObj.pause();
-			changeSrc(function (){
-				vidObj.play();  	  										
-				console.log('play');
-			});
-    	};        
-    };
-}]);
+	    	if (newSrc) {
+				vidObj.pause();
+				changeSrc(function (){
+					vidObj.play();  	  										
+					console.log('play');
+				});
+	    	};        
+    	};
+	})
