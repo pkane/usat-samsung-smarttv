@@ -62,5 +62,9 @@ function feedRouteConfig($routeProvider) {
 
 usatFeedServices.config(feedRouteConfig);
 
-
-
+angular.element(document).ready(function () {
+    var $injector = angular.bootstrap(document, ['usatSmartTv']);
+    var $controller = $injector.get('$controller');
+    var AngularCtrl = $controller('AppCtrl');
+    AngularCtrl.setUserName();
+});

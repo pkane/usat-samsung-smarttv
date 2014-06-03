@@ -36,7 +36,7 @@ angular.module('usatSmartTv.controllers', [])
 				this.handler[0].play();
 				console.log('play vid');
 			};
-			this.pauseVid = function() {
+			this.pauseVid = function() {	
 				this.handler[0].pause();
 			};
         };
@@ -48,7 +48,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
-				obj : new $scope.scene($(this.id)),
+				obj : new $scope.scene($('#'+this.id)),
 				state : 'active'
 			},
 			scene2 = {
@@ -58,7 +58,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
-				obj : new $scope.scene($(this.id)),
+				obj : new $scope.scene($('#'+this.id)),
 				state : 'inactive'
 			},
 			scene3 = {
@@ -68,7 +68,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
-				obj : new $scope.scene($(this.id)),
+				obj : new $scope.scene($('#'+this.id)),
 				state : 'inactive'
 			},
 			scene4 = {
@@ -78,7 +78,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
-				obj : new $scope.scene($(this.id)),
+				obj : new $scope.scene($('#'+this.id)),
 				state : 'inactive'
 			},
 			scene5 = {		
@@ -88,7 +88,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
-				obj : new $scope.scene($(this.id)),
+				obj : new $scope.scene($('#'+this.id)),
 				state : 'inactive'
 			},
 			scene6 = {
@@ -98,7 +98,7 @@ angular.module('usatSmartTv.controllers', [])
 				playlist : [],
 				curVid : 0,
 				src : [],
-				obj : new $scope.scene($(this.id)),
+				obj : new $scope.scene($('#'+this.id)),
 				state : 'inactive'
 			}
 		];           
@@ -137,7 +137,8 @@ angular.module('usatSmartTv.controllers', [])
 				if ($scope.scenes[i].state == 'active') {
 					activeScene = $scope.scenes[i];
 					prevScene = $scope.scenes[i-1];
-					nextScene = $scope.scenes[i+1];					
+					nextScene = $scope.scenes[i+1];		
+					(activeScene.obj).load().show().focus();
 				};
 			}
 
@@ -145,7 +146,7 @@ angular.module('usatSmartTv.controllers', [])
         };          
 	})
 
-	.controller('eventController', '$scope', function($scope) {	
+	.controller('eventController', '$scope', function($scope) {		
     	function nextPrevVideo(dir, event) {
 			var newVid = (activeScene.curVid+dir),
 				indexWrap = $('.index-wrapper'),
